@@ -18,7 +18,7 @@ Galois 的突破是把“根之间允许的置换”组织成 group，并证明�
 
 ## Group 定义
 
-集合 \(G\) 配 operation \(*\)，满足：
+集合 $G$ 配 operation $*$，满足：
 
 1. closure；
 2. associativity；
@@ -49,9 +49,9 @@ Galois 的突破是把“根之间允许的置换”组织成 group，并证明�
 
 抽象 group 可以通过 matrices 作用在 vector space：
 
-\[
+$
 \rho:G\to GL(V).
-\]
+$
 
 representation theory 让抽象 symmetry 进入 linear algebra。
 
@@ -59,9 +59,9 @@ representation theory 让抽象 symmetry 进入 linear algebra。
 
 rotation group：
 
-\[
+$
 SO(3)
-\]
+$
 
 既是 group，又是 smooth manifold。
 
@@ -71,7 +71,7 @@ SO(3)
 - differential geometry；
 - differential equations。
 
-机器人姿态和 3D vision 因此自然生活在 \(SO(3)\)、\(SE(3)\) 上。
+机器人姿态和 3D vision 因此自然生活在 $SO(3)$、$SE(3)$ 上。
 
 ## 物理：对称性比方程更深
 
@@ -95,9 +95,9 @@ crystal 的空间对称性通过 group 分类。材料性质与允许的 symmetr
 
 Standard Model 使用 Lie groups：
 
-\[
+$
 SU(3)\times SU(2)\times U(1).
-\]
+$
 
 这里 group 不只是“漂亮分类”，而是决定允许相互作用的结构语言。
 
@@ -113,7 +113,7 @@ SU(3)\times SU(2)\times U(1).
 
 ## 与九个核心公式的连接
 
-Euler complex rotation → \(U(1)\)。  
+Euler complex rotation → $U(1)$。  
 linear algebra → group representations。  
 geometry → Lie groups。  
 physics → symmetry + conservation。  
