@@ -16,18 +16,18 @@ Gauss 在 1827/1828 年的 curved surfaces 工作中系统发展曲面内在几�
 
 1854 年 Riemann 的 habilitation lecture 把曲面思想推广到任意维：
 
-- 每一点附近像 \(\mathbb R^n\)；
+- 每一点附近像 $\mathbb R^n$；
 - 但全局可能弯曲；
 - 用 metric tensor 决定局部长度和角度。
 
 局部线元素：
 
-\[
+$
 ds^2
 =
 \sum_{i,j}
 g_{ij}\,dx^i dx^j.
-\]
+$
 
 这就是 Riemannian geometry 的核心入口。
 
@@ -37,7 +37,7 @@ g_{ij}\,dx^i dx^j.
 
 在一般 manifold 上，geodesic 满足
 
-\[
+$
 \frac{d^2x^k}{dt^2}
 +
 \Gamma^k_{ij}
@@ -45,9 +45,9 @@ g_{ij}\,dx^i dx^j.
 \frac{dx^j}{dt}
 =
 0.
-\]
+$
 
-Christoffel symbols \(\Gamma^k_{ij}\) 编码坐标下的连接结构。
+Christoffel symbols $\Gamma^k_{ij}$ 编码坐标下的连接结构。
 
 ## 从曲率到广义相对论
 
@@ -55,16 +55,16 @@ Einstein 的关键思想之一是：引力不再单纯被视作普通力，而�
 
 极简口号是：
 
-\[
+$
 \text{物质告诉时空怎样弯，时空告诉物质怎样运动}.
-\]
+$
 
 数学语言需要 Riemann curvature、tensor calculus、geodesic 等。
 
 ## 今天的应用
 
 ### 机器人
-姿态属于 rotation group \(SO(3)\)，不是普通欧氏向量空间。导航和优化需要在 manifold 上计算。
+姿态属于 rotation group $SO(3)$，不是普通欧氏向量空间。导航和优化需要在 manifold 上计算。
 
 ### 计算机视觉
 相机姿态、三维重建、shape space 都大量使用 Lie group / manifold。
@@ -85,13 +85,13 @@ dMRI 中 diffusion tensor 是正定矩阵；直接用普通欧氏平均可能破
 
 可以粗略理解：
 
-\[
+$
 \text{topology}
 \subset
 \text{smooth structure}
 +
 \text{metric geometry}.
-\]
+$
 
 这不是严格集合包含关系，而是“结构逐层增加”的概念图。
 
