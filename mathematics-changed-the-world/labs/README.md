@@ -19,7 +19,7 @@ pip install -r requirements-labs.txt
 5. \`05_divergence_flux.py\`：内部散度和边界通量。
 6. \`06_residue_numeric.py\`：数值闭路积分读取留数。
 7. \`07_bayes_update.py\`：Beta-Bernoulli 顺序更新。
-8. \`08_prime_counting.py\`：\(\pi(x)\)、\(x/\log x\)、\(\operatorname{li}(x)\)。
+8. \`08_prime_counting.py\`：$\pi(x)$、$x/\log x$、$\operatorname{li}(x)$。
 9. \`09_monotone_convergence.py\`：单调简单函数逼近与积分收敛。
 
 ## 现代扩展示例
