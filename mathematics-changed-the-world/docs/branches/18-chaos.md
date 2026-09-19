@@ -6,47 +6,47 @@
 
 经典理想：
 
-\[
+$
 \text{initial condition}
 +
 \text{law}
 \Rightarrow
 \text{future}.
-\]
+$
 
 但若系统对初值 extremely sensitive，任何测量误差都会指数放大。
 
 两个初始状态相差
 
-\[
+$
 \delta x(0)
-\]
+$
 
 可能满足近似：
 
-\[
+$
 |\delta x(t)|
 \approx
 |\delta x(0)|e^{\lambda t}.
-\]
+$
 
-若最大 Lyapunov exponent \(\lambda>0\)，长期预测 horizon 有根本限制。
+若最大 Lyapunov exponent $\lambda>0$，长期预测 horizon 有根本限制。
 
 ## Lorenz 1963
 
 Lorenz 研究简化 convection system：
 
-\[
+$
 \dot x=\sigma(y-x),
-\]
+$
 
-\[
+$
 \dot y=x(\rho-z)-y,
-\]
+$
 
-\[
+$
 \dot z=xy-\beta z.
-\]
+$
 
 它只有三个 ODE，却可以产生非周期、对小初值差异极敏感的轨迹。
 
