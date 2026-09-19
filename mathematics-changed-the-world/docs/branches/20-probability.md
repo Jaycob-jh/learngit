@@ -17,15 +17,15 @@
 
 ## Bernoulli：大数规律
 
-若独立重复试验成功概率为 \(p\)，样本比例：
+若独立重复试验成功概率为 $p$，样本比例：
 
-\[
+$
 \hat p_n
 =
 \frac1n\sum_{i=1}^n X_i
-\]
+$
 
-会随着 \(n\) 增大趋近 \(p\)。
+会随着 $n$ 增大趋近 $p$。
 
 这揭示概率学的核心张力：
 
@@ -46,33 +46,33 @@
 
 现代 probability space：
 
-\[
+$
 (\Omega,\mathcal F,P).
-\]
+$
 
 其中：
 
-- \(\Omega\)：sample space；
-- \(\mathcal F\)：events 的 sigma-algebra；
-- \(P\)：probability measure。
+- $\Omega$：sample space；
+- $\mathcal F$：events 的 sigma-algebra；
+- $P$：probability measure。
 
 公理：
 
-\[
+$
 P(A)\ge0,
-\]
+$
 
-\[
+$
 P(\Omega)=1,
-\]
+$
 
-对互斥 \(A_i\)：
+对互斥 $A_i$：
 
-\[
+$
 P\left(\bigcup_iA_i\right)
 =
 \sum_iP(A_i).
-\]
+$
 
 这把 probability 建立在 measure theory 上。
 
@@ -80,27 +80,27 @@ P\left(\bigcup_iA_i\right)
 
 随机变量不是“一个随机变化的数字”，而是函数：
 
-\[
+$
 X:\Omega\to\mathbb R.
-\]
+$
 
 distribution：
 
-\[
+$
 P_X(B)
 =
 P(X\in B).
-\]
+$
 
 这种抽象让我们不必追踪 sample space 的所有细节，而专注观测量的概率规律。
 
 ## Expectation
 
-\[
+$
 E[X]
 =
 \int_\Omega X\,dP.
-\]
+$
 
 这就是 Lebesgue integral。
 
