@@ -68,7 +68,7 @@
 
 先修链：
 
-\[
+$
 \text{线性代数}
 \to
 \text{微积分}
@@ -76,7 +76,7 @@
 \text{概率}
 \to
 \text{优化}.
-\]
+$
 
 然后：
 
@@ -159,7 +159,7 @@
 - Taylor 把范围扩大到很远；
 - FFT 改采样率；
 - Bayes 改 prior 和 false-positive；
-- Kalman 把 \(R,Q\) 设错；
-- attention 去掉 \(1/\sqrt{d_k}\)。
+- Kalman 把 $R,Q$ 设错；
+- attention 去掉 $1/\sqrt{d_k}$。
 
 最后一步通常最有学习价值。
