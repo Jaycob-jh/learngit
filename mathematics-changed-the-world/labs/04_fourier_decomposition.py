@@ -15,7 +15,7 @@ spectrum = np.fft.rfft(signal)
 freq = np.fft.rfftfreq(len(signal), d=1.0 / sample_rate)
 amplitude = 2.0 * np.abs(spectrum) / len(signal)
 
-peak_idx = np.argsort(amplitude)[-6:][::-1]
+peak_idx = np.argsort(amplitude)[-3:][::-1]
 print("largest frequency bins (Hz):", freq[peak_idx])
 
 plt.figure()
