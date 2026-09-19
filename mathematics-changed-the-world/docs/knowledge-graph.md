@@ -55,7 +55,7 @@ flowchart LR
 
 ### 1. 连续变化链
 
-\[
+$
 \text{微积分}
 \to
 \text{ODE/PDE}
@@ -65,11 +65,11 @@ flowchart LR
 \text{数值计算}
 \to
 \text{控制/天气/工程}.
-\]
+$
 
 ### 2. 频率与函数空间链
 
-\[
+$
 \text{Euler/复数}
 \to
 \text{Fourier}
@@ -79,11 +79,11 @@ L^2
 \text{泛函分析}
 \to
 \text{小波/量子/PDE}.
-\]
+$
 
 ### 3. 不确定性链
 
-\[
+$
 \text{概率}
 \to
 \text{Bayes}
@@ -93,11 +93,11 @@ L^2
 \text{状态估计}
 \to
 \text{现代统计/生成模型}.
-\]
+$
 
 ### 4. 空间与对称链
 
-\[
+$
 \text{非欧几何}
 +
 \text{拓扑}
@@ -107,11 +107,11 @@ L^2
 \text{微分几何/Lie group}
 \to
 \text{相对论/机器人/3D vision}.
-\]
+$
 
 ### 5. 计算与 AI 链
 
-\[
+$
 \text{线性代数}
 +
 \text{微积分}
@@ -125,7 +125,7 @@ L^2
 \text{数值分析}
 \to
 \text{现代机器学习}.
-\]
+$
 
 ## 横向观察：数学不断重复四种策略
 
