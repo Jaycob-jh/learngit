@@ -6,15 +6,15 @@
 
 在普通线性代数中：
 
-\[
+$
 x=(x_1,\dots,x_n).
-\]
+$
 
 但很多数学对象本身是函数，例如：
 
-- 温度场 \(u(x)\)；
-- 波函数 \(\psi(x)\)；
-- 信号 \(f(t)\)；
+- 温度场 $u(x)$；
+- 波函数 $\psi(x)$；
+- 信号 $f(t)$；
 - PDE 的解。
 
 Fourier 告诉我们函数可以像向量那样分解成“基函数”。这推动一个巨大抽象：
@@ -25,23 +25,23 @@ Fourier 告诉我们函数可以像向量那样分解成“基函数”。这推
 
 Hilbert space 具有 inner product：
 
-\[
+$
 \langle f,g\rangle.
-\]
+$
 
 例如
 
-\[
+$
 L^2([a,b])
-\]
+$
 
 中的典型内积：
 
-\[
+$
 \langle f,g\rangle
 =
 \int_a^b f(x)\overline{g(x)}\,dx.
-\]
+$
 
 于是：
 
@@ -58,9 +58,9 @@ Fourier series 就可以理解为向正交基做投影。
 
 Banach space 只要求 norm 与 completeness：
 
-\[
+$
 \|x\|.
-\]
+$
 
 不一定有 inner product。
 
@@ -70,17 +70,17 @@ Stefan Banach 在 20 世纪早期把这套框架系统化。1932 年的著作成
 
 线性算子
 
-\[
+$
 T:X\to Y
-\]
+$
 
 对应有限维中的矩阵。
 
 例如微分：
 
-\[
+$
 D f=f'
-\]
+$
 
 就是一个 operator。
 
@@ -111,9 +111,9 @@ PDE 的 classical solution 往往要求过强的光滑性。
 
 functional analysis 允许在 Sobolev space 中寻找 weak solution：
 
-\[
+$
 u\in H^1,\ H^2,\dots
-\]
+$
 
 这样“解”可以不拥有每一点上的传统导数，却仍满足积分形式的方程。
 
@@ -127,7 +127,7 @@ u\in H^1,\ H^2,\dots
 
 ## 一条关键发展链
 
-\[
+$
 \text{Fourier}
 \to
 L^2
@@ -137,17 +137,17 @@ L^2
 \text{operators}
 \to
 \text{spectral theory}.
-\]
+$
 
 另一条：
 
-\[
+$
 \text{Lebesgue}
 \to
 L^p
 \to
 \text{Banach spaces}.
-\]
+$
 
 ## 参考
 
