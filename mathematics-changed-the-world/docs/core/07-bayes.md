@@ -6,31 +6,31 @@
 
 定义：
 
-$
+$$
 P(A|B)=\frac{P(A\cap B)}{P(B)},
-$
+$$
 
-$
+$$
 P(B|A)=\frac{P(A\cap B)}{P(A)}.
-$
+$$
 
 所以
 
-$
+$$
 P(A\cap B)
 =
 P(B|A)P(A)
 =
 P(A|B)P(B).
-$
+$$
 
 整理得
 
-$
+$$
 P(A|B)
 =
 \frac{P(B|A)P(A)}{P(B)}.
-$
+$$
 
 公式本身并不神秘；真正困难的是如何建立合理模型、选择变量以及计算高维后验。
 
@@ -46,19 +46,19 @@ Pierre-Simon Laplace 随后大幅推广“逆概率”方法，把它应用到�
 
 参数 $\theta$，数据 $D$：
 
-$
+$$
 p(\theta|D)
 =
 \frac{p(D|\theta)p(\theta)}{p(D)}.
-$
+$$
 
 通常写成
 
-$
+$$
 \text{posterior}
 \propto
 \text{likelihood}\times\text{prior}.
-$
+$$
 
 其中：
 
@@ -77,20 +77,20 @@ $
 
 即便测试很“灵敏”，阳性后患病概率仍不是 99%。
 
-$
+$$
 P(D|+)
 =
 \frac{P(+|D)P(D)}
 {P(+|D)P(D)+P(+|\neg D)P(\neg D)}.
-$
+$$
 
 代入：
 
-$
+$$
 \frac{0.99\times0.01}
 {0.99\times0.01+0.05\times0.99}
 \approx16.7\%.
-$
+$$
 
 原因是基准率很低，大量健康人中的少数假阳性也会形成可观数量。
 
@@ -100,11 +100,11 @@ Bayesian 方法天然适合连续学习。
 
 第一批数据得到 posterior 后，它可以作为下一批数据的 prior：
 
-$
+$$
 p(\theta|D_1,D_2)
 \propto
 p(D_2|\theta)p(\theta|D_1).
-$
+$$
 
 这让“学习”成为数学上的信息累积。
 
@@ -112,17 +112,17 @@ $
 
 若
 
-$
+$$
 p\sim\operatorname{Beta}(\alpha,\beta),
-$
+$$
 
 观察 Bernoulli 数据中成功 $s$ 次、失败 $f$ 次，则
 
-$
+$$
 p|D
 \sim
 \operatorname{Beta}(\alpha+s,\beta+f).
-$
+$$
 
 后验仍属于 Beta family，这叫 conjugacy。
 
@@ -148,20 +148,20 @@ $
 
 监督学习常求
 
-$
+$$
 \theta_{\text{MLE}}
 =
 \arg\max_\theta p(D|\theta).
-$
+$$
 
 若加入 prior：
 
-$
+$$
 \theta_{\text{MAP}}
 =
 \arg\max_\theta
 p(D|\theta)p(\theta).
-$
+$$
 
 许多正则化可以解释成 MAP 中的先验结构。例如高斯 prior 常对应 $L_2$ penalty。
 
