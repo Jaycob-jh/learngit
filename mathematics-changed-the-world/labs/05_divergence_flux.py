@@ -13,16 +13,18 @@ U, V = X, Y
 
 dx = x[1] - x[0]
 dy = y[1] - y[0]
-div = np.gradient(U, dx, axis=1) + np.gradient(V, dy, axis=0)
-interior_integral = div.sum() * dx * dy
+divergence = np.gradient(U, dx, axis=1) + np.gradient(V, dy, axis=0)
+interior_integral = np.trapezoid(
+    np.trapezoid(divergence, x, axis=1),
+    y,
+    axis=0,
+)
 
-m = 20000
-s = np.linspace(-1.0, 1.0, m)
-ds = s[1] - s[0]
-boundary_flux = 4.0 * np.sum(np.ones_like(s)) * ds
+# On every side of the square, F dot n = 1, and each side has length 2.
+boundary_flux = 8.0
 
 print("discrete interior divergence integral ≈", interior_integral)
-print("discrete boundary flux ≈", boundary_flux)
+print("boundary flux =", boundary_flux)
 print("exact value = 8")
 
 plt.figure()
