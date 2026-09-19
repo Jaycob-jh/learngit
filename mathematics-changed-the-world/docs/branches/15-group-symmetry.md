@@ -49,9 +49,9 @@ Galois 的突破是把“根之间允许的置换”组织成 group，并证明�
 
 抽象 group 可以通过 matrices 作用在 vector space：
 
-$
+$$
 \rho:G\to GL(V).
-$
+$$
 
 representation theory 让抽象 symmetry 进入 linear algebra。
 
@@ -59,9 +59,9 @@ representation theory 让抽象 symmetry 进入 linear algebra。
 
 rotation group：
 
-$
+$$
 SO(3)
-$
+$$
 
 既是 group，又是 smooth manifold。
 
@@ -95,9 +95,9 @@ crystal 的空间对称性通过 group 分类。材料性质与允许的 symmetr
 
 Standard Model 使用 Lie groups：
 
-$
+$$
 SU(3)\times SU(2)\times U(1).
-$
+$$
 
 这里 group 不只是“漂亮分类”，而是决定允许相互作用的结构语言。
 
