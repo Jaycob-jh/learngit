@@ -24,20 +24,20 @@ Lebesgue 的革命性想法可以粗略描述为：
 
 若
 
-$
+$$
 \phi
 =
 \sum_{k=1}^{m}a_k\mathbf 1_{E_k},
 \qquad a_k\ge0,
-$
+$$
 
 定义
 
-$
+$$
 \int\phi\,d\mu
 =
 \sum_{k=1}^{m}a_k\mu(E_k).
-$
+$$
 
 对一般非负可测函数 $f$，用越来越好的简单函数从下方逼近，定义其积分为这些简单积分的 supremum。
 
@@ -47,30 +47,30 @@ $
 
 若
 
-$
+$$
 0\le f_1\le f_2\le\cdots
-$
+$$
 
 且
 
-$
+$$
 f_n(x)\to f(x),
-$
+$$
 
 则
 
-$
+$$
 \int f\,d\mu
 =
 \lim_{n\to\infty}
 \int f_n\,d\mu.
-$
+$$
 
 常写作
 
-$
+$$
 f_n\uparrow f.
-$
+$$
 
 ## 4. 为什么它如此重要？
 
@@ -89,31 +89,31 @@ MCT 提供一种非常干净的充分条件：
 
 对非负 $f_n$：
 
-$
+$$
 \int\liminf f_n\,d\mu
 \le
 \liminf\int f_n\,d\mu.
-$
+$$
 
 ### Dominated Convergence Theorem
 
 若
 
-$
+$$
 f_n\to f
-$
+$$
 
 几乎处处，且存在可积 $g$ 使
 
-$
+$$
 |f_n|\le g,
-$
+$$
 
 则
 
-$
+$$
 \int f_n\to\int f.
-$
+$$
 
 现代分析中这三者是一组极重要工具。
 
@@ -121,25 +121,25 @@ $
 
 现代概率空间写成
 
-$
+$$
 (\Omega,\mathcal F,P),
-$
+$$
 
 其中 $P$ 是一个 measure。
 
 随机变量
 
-$
+$$
 X:\Omega\to\mathbb R
-$
+$$
 
 是可测函数，而期望
 
-$
+$$
 E[X]
 =
 \int_\Omega X\,dP
-$
+$$
 
 就是 Lebesgue integral。
 
