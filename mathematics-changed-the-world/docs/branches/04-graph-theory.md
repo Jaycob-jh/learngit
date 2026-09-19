@@ -8,9 +8,9 @@ Euler 在 1736 年处理 Königsberg bridges 时，把陆地压成 vertices，�
 
 现实地图被抽象成：
 
-$
+$$
 G=(V,E).
-$
+$$
 
 这个抽象非常激进：距离、角度、桥的长度全部丢掉，只保留 connectivity。
 
@@ -32,9 +32,9 @@ Tree 是无环连通图。
 
 对 $n$ 个顶点的树：
 
-$
+$$
 |E|=n-1.
-$
+$$
 
 树结构无处不在：
 
@@ -50,13 +50,13 @@ Dijkstra、Bellman–Ford、A* 等算法解决不同条件下的 shortest path�
 
 这把“图论”连接到 algorithmics：
 
-$
+$$
 \text{结构}
 +
 \text{复杂性}
 +
 \text{数据结构}.
-$
+$$
 
 ## 网络科学
 
@@ -86,7 +86,7 @@ $
 
 GNN 常把邻居信息聚合：
 
-$
+$$
 h_v^{(l+1)}
 =
 \operatorname{UPDATE}
@@ -94,7 +94,7 @@ h_v^{(l+1)}
 h_v^{(l)},
 \operatorname{AGG}_{u\in N(v)}h_u^{(l)}
 \right).
-$
+$$
 
 它把“学习”从网格数据扩展到任意 graph structure。
 
