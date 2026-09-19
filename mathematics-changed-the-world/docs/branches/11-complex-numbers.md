@@ -6,9 +6,9 @@
 
 16 世纪求 cubic equations 时，Cardano 公式会在某些最终具有实根的情形中出现
 
-\[
+$
 \sqrt{-1}.
-\]
+$
 
 这些量最初令人不安，因为它们似乎不对应普通长度。
 
@@ -18,29 +18,29 @@ Bombelli 系统整理了相关运算规则，逐渐让 complex arithmetic 成为
 
 写
 
-\[
+$
 z=x+iy.
-\]
+$
 
-复数可以对应平面点 \((x,y)\)。
+复数可以对应平面点 $(x,y)$。
 
 于是：
 
 - 加法 = 平移式向量加法；
 - 模长
 
-\[
+$
 |z|=\sqrt{x^2+y^2};
-\]
+$
 
 - argument = 方向角；
 - multiplication = 缩放 + 旋转。
 
 极坐标：
 
-\[
+$
 z=re^{i\theta}.
-\]
+$
 
 这让 complex number 从“多出来的根”变成二维 geometry 的自然 algebra。
 
@@ -48,21 +48,21 @@ z=re^{i\theta}.
 
 在 complex numbers 中，每个非零次数 polynomial 都能完全分解为一次因子：
 
-\[
+$
 p(z)
 =
 a\prod_{k=1}^{n}(z-z_k).
-\]
+$
 
 复数因此给 polynomial equations 提供代数闭包。
 
 ## Euler 公式是转折点之一
 
-\[
+$
 e^{i\theta}
 =
 \cos\theta+i\sin\theta.
-\]
+$
 
 复指数把：
 
@@ -79,16 +79,16 @@ e^{i\theta}
 
 若
 
-\[
+$
 f(z)=u(x,y)+iv(x,y)
-\]
+$
 
 complex differentiable，实部虚部需满足 Cauchy–Riemann equations：
 
-\[
+$
 u_x=v_y,\qquad
 u_y=-v_x.
-\]
+$
 
 满足适当条件后，holomorphic function 会具有极强结构：
 
@@ -112,7 +112,7 @@ u_y=-v_x.
 
 ## 一条知识链
 
-\[
+$
 \text{三次方程}
 \to
 i
@@ -124,7 +124,7 @@ e^{i\theta}
 \text{complex analysis}
 \to
 \text{residue/Fourier/control}.
-\]
+$
 
 ## 参考
 
