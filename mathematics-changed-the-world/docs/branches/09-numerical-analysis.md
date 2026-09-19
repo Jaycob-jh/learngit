@@ -26,25 +26,25 @@
 ### 离散化/截断误差
 例如导数：
 
-\[
+$
 f'(x)
 \approx
 \frac{f(x+h)-f(x)}{h}.
-\]
+$
 
 这不是精确等式。
 
 ### floating-point roundoff
 计算机不能精确表示大多数实数。
 
-## 一个反直觉：\(h\) 越小不一定越好
+## 一个反直觉：$h$ 越小不一定越好
 
 差分导数中：
 
-- \(h\) 太大 → truncation error 大；
-- \(h\) 太小 → 两个非常接近的数相减，roundoff / catastrophic cancellation 放大。
+- $h$ 太大 → truncation error 大；
+- $h$ 太小 → 两个非常接近的数相减，roundoff / catastrophic cancellation 放大。
 
-因此最佳 \(h\) 常是折中，而不是趋近机器能表示的最小数。
+因此最佳 $h$ 常是折中，而不是趋近机器能表示的最小数。
 
 ## Conditioning vs stability
 
@@ -58,9 +58,9 @@ f'(x)
 
 ## Linear systems 是核心基础设施
 
-\[
+$
 Ax=b.
-\]
+$
 
 Gaussian elimination、LU、QR、Cholesky、iterative methods、Krylov methods 是 scientific computing 的骨架。
 
@@ -68,9 +68,9 @@ Gaussian elimination、LU、QR、Cholesky、iterative methods、Krylov methods �
 
 ## Eigenvalue problems
 
-\[
+$
 Av=\lambda v.
-\]
+$
 
 出现在：
 
