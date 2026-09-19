@@ -6,17 +6,17 @@
 
 普通优化：
 
-\[
+$
 \min_x f(x).
-\]
+$
 
 变量由一个决策者控制。
 
-博弈中玩家 \(i\) 的收益：
+博弈中玩家 $i$ 的收益：
 
-\[
+$
 u_i(a_1,\dots,a_n)
-\]
+$
 
 同时依赖所有人的 action。
 
@@ -30,15 +30,15 @@ von Neumann 在 1928 年证明 two-player zero-sum game 的 minimax theorem。
 
 ## Nash equilibrium
 
-策略组合 \(s^*=(s_1^*,\dots,s_n^*)\) 若满足：
+策略组合 $s^*=(s_1^*,\dots,s_n^*)$ 若满足：
 
-\[
+$
 u_i(s_i^*,s_{-i}^*)
 \ge
 u_i(s_i,s_{-i}^*)
-\]
+$
 
-对每个玩家 \(i\) 和任何 unilateral deviation \(s_i\) 成立，则为 Nash equilibrium。
+对每个玩家 $i$ 和任何 unilateral deviation $s_i$ 成立，则为 Nash equilibrium。
 
 直觉：
 
@@ -96,9 +96,9 @@ evolutionary game theory 研究策略比例如何在群体中变化。
 
 GAN 可以写成 min-max：
 
-\[
+$
 \min_G\max_D V(D,G).
-\]
+$
 
 强化学习中的 policy competition、self-play、adversarial training 都包含博弈结构。
 
