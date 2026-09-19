@@ -8,65 +8,65 @@ Euclid 早已证明素数有无穷多个。
 
 但更难的问题是：
 
-> 小于 \(x\) 的素数到底有多少？
+> 小于 $x$ 的素数到底有多少？
 
 定义
 
-\[
+$
 \pi(x)=\#\{p\le x:p\text{ 是素数}\}.
-\]
+$
 
 Gauss、Legendre 等通过计算观察到
 
-\[
+$
 \pi(x)
 \approx
 \frac{x}{\log x}
-\]
+$
 
 以及更精细的
 
-\[
+$
 \pi(x)\approx \operatorname{li}(x),
-\]
+$
 
 其中
 
-\[
+$
 \operatorname{li}(x)
 =
 \operatorname{PV}\int_0^x\frac{dt}{\log t}
-\]
+$
 
-需注意 \(t=1\) 的奇点，严格定义要做适当处理。
+需注意 $t=1$ 的奇点，严格定义要做适当处理。
 
 ## 2. 素数定理说的是什么？
 
-\[
+$
 \pi(x)\sim\frac{x}{\log x},
-\]
+$
 
 意思是
 
-\[
+$
 \lim_{x\to\infty}
 \frac{\pi(x)}
 {x/\log x}
 =
 1.
-\]
+$
 
 这不是说每个区间都平均分布，而是说在非常大的尺度上，素数密度大约为
 
-\[
+$
 \frac{1}{\log x}.
-\]
+$
 
 ## 3. Euler 的关键桥梁
 
 Euler 发现 zeta function 的乘积结构：
 
-\[
+$
 \zeta(s)
 =
 \sum_{n=1}^{\infty}\frac1{n^s}
@@ -75,63 +75,63 @@ Euler 发现 zeta function 的乘积结构：
 \frac{1}{1-p^{-s}}
 \quad
 (\Re s>1).
-\]
+$
 
 左边对所有正整数求和，右边却对所有素数做乘积。
 
 这就是解析数论最深刻的原型之一：
 
-\[
+$
 \text{整数加法结构}
 \longleftrightarrow
 \text{素数乘法结构}.
-\]
+$
 
 ## 4. Riemann 1859：把素数放进复平面
 
-Riemann 研究 \(\zeta(s)\) 在复平面的解析延拓和零点，并建立素数计数与这些零点之间的联系。
+Riemann 研究 $\zeta(s)$ 在复平面的解析延拓和零点，并建立素数计数与这些零点之间的联系。
 
 这一步的思想极具代表性：
 
 > 为了理解整数里的离散结构，把问题搬到连续的复分析世界里。
 
-Hadamard 和 de la Vallée Poussin 于 1896 年独立证明素数定理，关键是证明 zeta 在 \(\Re s=1\) 上没有零点。
+Hadamard 和 de la Vallée Poussin 于 1896 年独立证明素数定理，关键是证明 zeta 在 $\Re s=1$ 上没有零点。
 
 ## 5. Riemann 假设究竟控制什么？
 
 非平凡零点写成
 
-\[
+$
 \rho=\beta+i\gamma.
-\]
+$
 
 Riemann hypothesis 猜测：
 
-\[
+$
 \beta=\frac12
-\]
+$
 
 对所有非平凡零点成立。
 
 它不是“证明素数有规律”——素数定理已经做到了。RH 更深地约束：
 
-> \(\pi(x)\) 围绕主趋势波动得有多厉害。
+> $\pi(x)$ 围绕主趋势波动得有多厉害。
 
 也就是控制素数分布误差项。
 
-## 6. 为什么 \(\operatorname{li}(x)\) 往往比 \(x/\log x\) 更准？
+## 6. 为什么 $\operatorname{li}(x)$ 往往比 $x/\log x$ 更准？
 
-直觉上素数在尺度 \(t\) 附近的“局部密度”约为
+直觉上素数在尺度 $t$ 附近的“局部密度”约为
 
-\[
+$
 \frac1{\log t}.
-\]
+$
 
-把这种密度从 2 累积到 \(x\)：
+把这种密度从 2 累积到 $x$：
 
-\[
+$
 \int_2^x\frac{dt}{\log t},
-\]
+$
 
 自然得到对数积分近似。
 
@@ -159,13 +159,13 @@ python labs/08_prime_counting.py
 
 比较：
 
-\[
+$
 \pi(x),\qquad
 x/\log x,\qquad
 \operatorname{li}(x)
-\]
+$
 
-随 \(x\) 增大时的逼近效果。
+随 $x$ 增大时的逼近效果。
 
 ## 9. 向外延伸
 
