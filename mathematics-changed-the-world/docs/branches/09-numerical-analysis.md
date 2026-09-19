@@ -26,11 +26,11 @@
 ### 离散化/截断误差
 例如导数：
 
-$
+$$
 f'(x)
 \approx
 \frac{f(x+h)-f(x)}{h}.
-$
+$$
 
 这不是精确等式。
 
@@ -58,9 +58,9 @@ $
 
 ## Linear systems 是核心基础设施
 
-$
+$$
 Ax=b.
-$
+$$
 
 Gaussian elimination、LU、QR、Cholesky、iterative methods、Krylov methods 是 scientific computing 的骨架。
 
@@ -68,9 +68,9 @@ Gaussian elimination、LU、QR、Cholesky、iterative methods、Krylov methods �
 
 ## Eigenvalue problems
 
-$
+$$
 Av=\lambda v.
-$
+$$
 
 出现在：
 
