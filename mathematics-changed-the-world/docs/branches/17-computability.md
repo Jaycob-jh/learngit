@@ -31,9 +31,9 @@ Turing 进一步展示：
 
 这就是现代 stored-program computer 最重要的概念祖先之一：
 
-$
+$$
 \text{program 也可以是 data}.
-$
+$$
 
 ## Halting problem
 
