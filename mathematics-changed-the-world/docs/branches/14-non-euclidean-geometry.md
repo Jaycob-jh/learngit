@@ -20,9 +20,9 @@ Lobachevsky 与 Bolyai 在 19 世纪独立发展非欧几何。
 
 三角形角和：
 
-\[
+$
 \alpha+\beta+\gamma<\pi.
-\]
+$
 
 而且偏差与面积存在关系。
 
@@ -34,9 +34,9 @@ Lobachevsky 与 Bolyai 在 19 世纪独立发展非欧几何。
 
 球面三角形：
 
-\[
+$
 \alpha+\beta+\gamma>\pi.
-\]
+$
 
 ## Riemann 的升级
 
