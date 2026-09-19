@@ -12,61 +12,61 @@
 
 指数、余弦、正弦的 Taylor 级数分别为
 
-$
+$$
 e^x
 =
 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots,
-$
+$$
 
-$
+$$
 \cos x
 =
 1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots,
-$
+$$
 
-$
+$$
 \sin x
 =
 x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots.
-$
+$$
 
 把 $x$ 换成 $i\theta$，利用 $i^2=-1$：
 
-$
+$$
 e^{i\theta}
 =
 1+i\theta-\frac{\theta^2}{2!}
 -i\frac{\theta^3}{3!}
 +\frac{\theta^4}{4!}+\cdots.
-$
+$$
 
 把实部、虚部分组：
 
-$
+$$
 e^{i\theta}
 =
 \cos\theta+i\sin\theta.
-$
+$$
 
 ## 3. 为什么复乘法就是旋转？
 
 写
 
-$
+$$
 z=re^{i\theta}.
-$
+$$
 
 再乘以
 
-$
+$$
 w=\rho e^{i\phi},
-$
+$$
 
 得到
 
-$
+$$
 zw=r\rho e^{i(\theta+\phi)}.
-$
+$$
 
 所以复数乘法同时完成两件事：
 
@@ -79,27 +79,27 @@ $
 
 对
 
-$
+$$
 e^{i\omega t}
-$
+$$
 
 求导：
 
-$
+$$
 \frac{d}{dt}e^{i\omega t}
 =
 i\omega e^{i\omega t}.
-$
+$$
 
 也就是说，微分不会改变它的“形状”，只乘上一个常数。这使复指数成为线性微分系统天然的特征函数。
 
 因此正弦振动常写为
 
-$
+$$
 A\cos(\omega t+\phi)
 =
 \Re\{Ae^{i(\omega t+\phi)}\}.
-$
+$$
 
 计算时先在复数域做代数，最后取实部即可。
 
@@ -107,9 +107,9 @@ $
 
 令 $\theta=\pi$：
 
-$
+$$
 e^{i\pi}+1=0.
-$
+$$
 
 它把 $e,i,\pi,1,0$ 放进一个极简关系。但其真正价值不是“审美投票”，而是它揭示了多个数学结构之间的统一。
 
@@ -130,9 +130,9 @@ $
 ### Fourier
 Fourier transform 的核就是
 
-$
+$$
 e^{-i\omega t}.
-$
+$$
 
 ## 7. 常见误解
 
