@@ -22,12 +22,12 @@ Gauss 在 1827/1828 年的 curved surfaces 工作中系统发展曲面内在几�
 
 局部线元素：
 
-$
+$$
 ds^2
 =
 \sum_{i,j}
 g_{ij}\,dx^i dx^j.
-$
+$$
 
 这就是 Riemannian geometry 的核心入口。
 
@@ -37,7 +37,7 @@ $
 
 在一般 manifold 上，geodesic 满足
 
-$
+$$
 \frac{d^2x^k}{dt^2}
 +
 \Gamma^k_{ij}
@@ -45,7 +45,7 @@ $
 \frac{dx^j}{dt}
 =
 0.
-$
+$$
 
 Christoffel symbols $\Gamma^k_{ij}$ 编码坐标下的连接结构。
 
@@ -55,9 +55,9 @@ Einstein 的关键思想之一是：引力不再单纯被视作普通力，而�
 
 极简口号是：
 
-$
+$$
 \text{物质告诉时空怎样弯，时空告诉物质怎样运动}.
-$
+$$
 
 数学语言需要 Riemann curvature、tensor calculus、geodesic 等。
 
@@ -85,13 +85,13 @@ dMRI 中 diffusion tensor 是正定矩阵；直接用普通欧氏平均可能破
 
 可以粗略理解：
 
-$
+$$
 \text{topology}
 \subset
 \text{smooth structure}
 +
 \text{metric geometry}.
-$
+$$
 
 这不是严格集合包含关系，而是“结构逐层增加”的概念图。
 
