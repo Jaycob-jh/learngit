@@ -6,9 +6,9 @@
 
 Newton 力学的自然写法：
 
-\[
+$
 m\frac{d^2x}{dt^2}=F(x,t).
-\]
+$
 
 给定：
 
@@ -23,9 +23,9 @@ m\frac{d^2x}{dt^2}=F(x,t).
 
 ordinary differential equation 只有一个 independent variable，例如：
 
-\[
+$
 \frac{dx}{dt}=f(x,t).
-\]
+$
 
 典型问题：
 
@@ -38,9 +38,9 @@ ordinary differential equation 只有一个 independent variable，例如：
 
 若未知量依赖多个变量：
 
-\[
+$
 u(x,t)
-\]
+$
 
 会出现 partial derivatives。
 
@@ -48,21 +48,21 @@ u(x,t)
 
 ### Heat
 
-\[
+$
 u_t=\alpha u_{xx}.
-\]
+$
 
 ### Wave
 
-\[
+$
 u_{tt}=c^2u_{xx}.
-\]
+$
 
 ### Laplace
 
-\[
+$
 \nabla^2u=0.
-\]
+$
 
 它们分别体现：
 
@@ -89,11 +89,11 @@ u_{tt}=c^2u_{xx}.
 
 对
 
-\[
+$
 \dot x=f(x)
-\]
+$
 
-不一定直接求 \(x(t)\)，可以研究 state space 中 trajectory 的结构：
+不一定直接求 $x(t)$，可以研究 state space 中 trajectory 的结构：
 
 - fixed point；
 - limit cycle；
