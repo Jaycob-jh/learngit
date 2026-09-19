@@ -6,21 +6,21 @@
 
 随机变量：
 
-$
+$$
 X:\Omega\to\mathbb R.
-$
+$$
 
 随机过程是一族随机变量：
 
-$
+$$
 \{X_t:t\in T\}.
-$
+$$
 
 每个 $t$ 有一个随机变量；一次真实观察则产生整条 trajectory：
 
-$
+$$
 t\mapsto X_t(\omega).
-$
+$$
 
 这一步把 probability 从“单次不确定量”扩展为“随机动态系统”。
 
@@ -28,11 +28,11 @@ $
 
 Markov process 的核心条件可粗略写为：
 
-$
+$$
 P(X_{t+1}|X_t,X_{t-1},\dots)
 =
 P(X_{t+1}|X_t).
-$
+$$
 
 即给定当前状态后，过去不再提供额外预测信息。
 
@@ -51,9 +51,9 @@ Wiener process 满足：
 
 因此普通微积分不能直接处理
 
-$
+$$
 dW_t/dt.
-$
+$$
 
 这催生 stochastic calculus。
 
@@ -61,37 +61,37 @@ $
 
 典型 SDE：
 
-$
+$$
 dX_t
 =
 \mu(X_t,t)\,dt
 +
 \sigma(X_t,t)\,dW_t.
-$
+$$
 
 Itô formula 类似 stochastic 版本的 chain rule，但多出二阶项。
 
 若
 
-$
+$$
 dX_t=\mu\,dt+\sigma\,dW_t,
-$
+$$
 
 则
 
-$
+$$
 df(X_t)
 =
 f'(X_t)dX_t
 +
 \frac12f''(X_t)\sigma^2dt.
-$
+$$
 
 这个额外项来自 Brownian increment 的尺度：
 
-$
+$$
 (dW_t)^2\sim dt.
-$
+$$
 
 ## Kolmogorov 的作用
 
