@@ -4,9 +4,9 @@
 
 ## 一般优化
 
-$
+$$
 \min_x f(x)
-$
+$$
 
 subject to constraints.
 
@@ -16,19 +16,19 @@ subject to constraints.
 
 集合 $C$ convex，若任意 $x,y\in C$ 与 $0\le\theta\le1$：
 
-$
+$$
 \theta x+(1-\theta)y\in C.
-$
+$$
 
 直觉：任意两点之间整条线段仍在集合内。
 
 ## Convex function
 
-$
+$$
 f(\theta x+(1-\theta)y)
 \le
 \theta f(x)+(1-\theta)f(y).
-$
+$$
 
 几何上函数图像位于任意 chord 下方。
 
@@ -44,19 +44,19 @@ $
 
 可微 convex $f$：
 
-$
+$$
 f(y)
 \ge
 f(x)+\nabla f(x)^T(y-x).
-$
+$$
 
 函数永远位于 tangent hyperplane 之上。
 
 若
 
-$
+$$
 \nabla f(x^*)=0,
-$
+$$
 
 则 $x^*$ 为 global minimizer。
 
@@ -64,23 +64,23 @@ $
 
 带 constraints：
 
-$
+$$
 \min_x f_0(x)
-$
+$$
 
 s.t.
 
-$
+$$
 f_i(x)\le0.
-$
+$$
 
 构造 Lagrangian：
 
-$
+$$
 L(x,\lambda)
 =
 f_0(x)+\sum_i\lambda_i f_i(x).
-$
+$$
 
 dual problem 不仅用于求解，也能给 lower bound 和 optimality certificate。
 
@@ -132,7 +132,7 @@ Stanford 的 Boyd 等推动 convex optimization 成为现代工程的通用工�
 
 二阶 Taylor：
 
-$
+$$
 f(x+\Delta)
 \approx
 f(x)
@@ -140,13 +140,13 @@ f(x)
 \nabla f^T\Delta
 +
 \frac12\Delta^TH\Delta.
-$
+$$
 
 Hessian：
 
-$
+$$
 H\succeq0
-$
+$$
 
 是二阶可微 convex function 的重要判据。
 
