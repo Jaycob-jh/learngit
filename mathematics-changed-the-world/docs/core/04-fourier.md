@@ -6,11 +6,11 @@
 
 Joseph Fourier 研究一根金属杆如何传热，得到热方程
 
-\[
+$
 \frac{\partial u}{\partial t}
 =
 \alpha\frac{\partial^2u}{\partial x^2}.
-\]
+$
 
 为了求解，他把初始温度分布写成正弦/余弦的叠加。今天看来这是“标准方法”，当时却极具争议：**一个带尖角、甚至不连续的函数，怎么能由光滑三角波叠加出来？**
 
@@ -18,22 +18,22 @@ Joseph Fourier 研究一根金属杆如何传热，得到热方程
 
 ## 2. Fourier 级数
 
-对周期 \(2\pi\) 的函数，可尝试
+对周期 $2\pi$ 的函数，可尝试
 
-\[
+$
 f(x)
 \sim
 \frac{a_0}{2}
 +
 \sum_{n=1}^{\infty}
 (a_n\cos nx+b_n\sin nx).
-\]
+$
 
 系数来自正交性，例如
 
-\[
+$
 a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos(nx)\,dx.
-\]
+$
 
 本质上是在无限维函数空间里做“投影”。
 
@@ -41,66 +41,66 @@ a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos(nx)\,dx.
 
 非周期情形下，离散频率变为连续频率：
 
-\[
+$
 F(\omega)
 =
 \int_{-\infty}^{\infty}
 f(t)e^{-i\omega t}\,dt.
-\]
+$
 
 逆变换在一种常见归一化下：
 
-\[
+$
 f(t)
 =
 \frac{1}{2\pi}
 \int_{-\infty}^{\infty}
 F(\omega)e^{i\omega t}\,d\omega.
-\]
+$
 
-不同教材会把 \(2\pi\) 放在不同位置，思想不变。
+不同教材会把 $2\pi$ 放在不同位置，思想不变。
 
 ## 4. 为什么变换之后更好算？
 
 ### 微分变乘法
 
-\[
+$
 \mathcal F\{f'(t)\}
 =
 i\omega F(\omega).
-\]
+$
 
 原本的微分运算变成乘法。
 
 ### 卷积变乘法
 
-\[
+$
 \mathcal F\{f*g\}
 =
 F(\omega)G(\omega).
-\]
+$
 
 因此线性时不变系统、滤波、模糊、响应都可以在频域中高效分析。
 
 ## 5. DFT 与 FFT 不要混
 
 ### DFT
-对有限序列 \(x_0,\dots,x_{N-1}\) 定义
+对有限序列 $x_0,\dots,x_{N-1}$ 定义
 
-\[
+$
 X_k=
 \sum_{n=0}^{N-1}
 x_n e^{-2\pi i kn/N}.
-\]
+$
 
-直接计算约需 \(O(N^2)\) 运算。
+直接计算约需 $O(N^2)$ 运算。
 
 ### FFT
 FFT 是一族快速计算 DFT 的算法，把典型复杂度降到约
 
-\[
+$
 O(N\log N).
-\]
+$
 
 **Fourier transform 是数学对象，DFT 是离散版本，FFT 是算法。**
 
@@ -140,7 +140,7 @@ python labs/04_fourier_decomposition.py
 
 ## 9. 向外延伸
 
-Fourier → Lebesgue → \(L^2\) Hilbert space → 泛函分析 → 小波 → 现代信号处理。
+Fourier → Lebesgue → $L^2$ Hilbert space → 泛函分析 → 小波 → 现代信号处理。
 
 ## 参考
 
