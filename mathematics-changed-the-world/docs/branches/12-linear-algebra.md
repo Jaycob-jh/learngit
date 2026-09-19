@@ -19,17 +19,17 @@
 
 最重要的理解不是“二维数字表”，而是：
 
-$
+$$
 A:\mathbb R^n\to\mathbb R^m
-$
+$$
 
 表示 linear transformation。
 
 矩阵乘法
 
-$
+$$
 AB
-$
+$$
 
 对应变换 composition。
 
@@ -37,9 +37,9 @@ $
 
 ## Ax=b
 
-$
+$$
 Ax=b
-$
+$$
 
 是 scientific computing 的基础结构。
 
@@ -52,9 +52,9 @@ $
 
 ## Eigenvalue
 
-$
+$$
 Av=\lambda v.
-$
+$$
 
 $v$ 是被变换后方向不变的特殊向量，只被 scale。
 
@@ -69,9 +69,9 @@ $v$ 是被变换后方向不变的特殊向量，只被 scale。
 
 ## SVD：最重要的矩阵分解之一
 
-$
+$$
 A=U\Sigma V^T.
-$
+$$
 
 SVD 把任意矩阵分成：
 
@@ -98,17 +98,17 @@ SVD 把任意矩阵分成：
 
 神经网络层：
 
-$
+$$
 h=\sigma(Wx+b).
-$
+$$
 
 Transformer 的：
 
-$
+$$
 Q=XW_Q,\quad
 K=XW_K,\quad
 V=XW_V
-$
+$$
 
 仍是矩阵乘法。
 
