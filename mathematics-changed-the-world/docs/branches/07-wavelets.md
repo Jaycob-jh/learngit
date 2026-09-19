@@ -6,9 +6,9 @@
 
 Fourier basis：
 
-$
+$$
 e^{i\omega t}
-$
+$$
 
 在整个时间轴上延伸。
 
@@ -18,12 +18,12 @@ $
 
 一种改进是短时 Fourier：
 
-$
+$$
 \operatorname{STFT}_x(\tau,\omega)
 =
 \int
 x(t)w(t-\tau)e^{-i\omega t}\,dt.
-$
+$$
 
 问题在于固定 window width 意味着所有频率使用同样的时间—频率分辨率。
 
@@ -31,7 +31,7 @@ $
 
 连续小波：
 
-$
+$$
 W_x(a,b)
 =
 \frac1{\sqrt{|a|}}
@@ -41,7 +41,7 @@ x(t)
 \psi\left(\frac{t-b}{a}\right)
 }
 dt.
-$
+$$
 
 其中：
 
@@ -63,14 +63,14 @@ Mallat 与 Meyer 在 1980s 形成 multiresolution analysis 框架；Daubechies �
 
 最简单 wavelet：
 
-$
+$$
 \psi(t)=
 \begin{cases}
 1,&0\le t<1/2,\\
 -1,&1/2\le t<1,\\
 0,&\text{otherwise}.
 \end{cases}
-$
+$$
 
 它计算的本质是“左半平均与右半平均之差”。
 
