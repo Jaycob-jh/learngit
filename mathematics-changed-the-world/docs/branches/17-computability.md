@@ -31,15 +31,15 @@ Turing 进一步展示：
 
 这就是现代 stored-program computer 最重要的概念祖先之一：
 
-\[
+$
 \text{program 也可以是 data}.
-\]
+$
 
 ## Halting problem
 
 问：
 
-> 给定任意程序 \(P\) 和输入 \(x\)，能否写一个通用程序判断 \(P(x)\) 最终是否停止？
+> 给定任意程序 $P$ 和输入 $x$，能否写一个通用程序判断 $P(x)$ 最终是否停止？
 
 Turing 证明：不存在这样的 universal halting decider。
 
