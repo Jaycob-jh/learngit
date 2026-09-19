@@ -6,13 +6,13 @@
 
 设 $\Omega\subset\mathbb R^3$，边界为 $\partial\Omega$，向量场 $\mathbf F$ 足够光滑：
 
-$
+$$
 \iiint_{\Omega}
 \nabla\cdot\mathbf F\,dV
 =
 \iint_{\partial\Omega}
 \mathbf F\cdot\mathbf n\,dS.
-$
+$$
 
 左边：内部每一点的散度累积。  
 右边：穿过外边界的净流量。
@@ -21,13 +21,13 @@ $
 
 若
 
-$
+$$
 \mathbf F=(F_x,F_y,F_z),
-$
+$$
 
 则
 
-$
+$$
 \nabla\cdot\mathbf F
 =
 \frac{\partial F_x}{\partial x}
@@ -35,7 +35,7 @@ $
 \frac{\partial F_y}{\partial y}
 +
 \frac{\partial F_z}{\partial z}.
-$
+$$
 
 它衡量一个极小体积附近是“净流出”还是“净流入”。
 
@@ -62,25 +62,25 @@ $
 
 一维：
 
-$
+$$
 \int_a^b f'(x)\,dx=f(b)-f(a).
-$
+$$
 
 三维：
 
-$
+$$
 \int_{\Omega}\nabla\cdot F
 =
 \int_{\partial\Omega}F\cdot n.
-$
+$$
 
 更高层次上，Green 定理、Stokes 定理、散度定理都可以统一进广义 Stokes 定理：
 
-$
+$$
 \int_M d\omega
 =
 \int_{\partial M}\omega.
-$
+$$
 
 这条结构是现代微分几何的重要桥梁。
 
@@ -95,9 +95,9 @@ $
 ### 电磁学
 Gauss law：
 
-$
+$$
 \nabla\cdot\mathbf E=\rho/\varepsilon_0
-$
+$$
 
 积分后把体内电荷与边界电通量联系起来。
 
