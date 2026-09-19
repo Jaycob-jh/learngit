@@ -6,9 +6,9 @@
 
 若 $f(z)$ 在闭曲线 $\gamma$ 及其内部全纯，则
 
-$
+$$
 \oint_\gamma f(z)\,dz=0.
-$
+$$
 
 这件事与实变积分的直觉非常不同。复可微比实可微强得多；全纯函数受到极强约束。
 
@@ -22,7 +22,7 @@ $
 
 在孤立奇点 $z_0$ 附近，函数可能写成
 
-$
+$$
 f(z)=
 \cdots+
 \frac{a_{-2}}{(z-z_0)^2}
@@ -30,29 +30,29 @@ f(z)=
 \frac{a_{-1}}{z-z_0}
 +
 a_0+a_1(z-z_0)+\cdots.
-$
+$$
 
 系数 $a_{-1}$ 就叫
 
-$
+$$
 \operatorname{Res}(f,z_0).
-$
+$$
 
 ## 3. 为什么只有 $a_{-1}$ 留下来？
 
 沿小圆 $z-z_0=re^{i\theta}$：
 
-$
+$$
 \oint (z-z_0)^n dz.
-$
+$$
 
 除了 $n=-1$ 外，其余整数次幂的闭路积分都为 0；而
 
-$
+$$
 \oint\frac{dz}{z-z_0}
 =
 2\pi i.
-$
+$$
 
 因此一整串 Laurent 系数中，闭路积分只“读取” $a_{-1}$。
 
@@ -62,13 +62,13 @@ $
 
 若闭曲线内部的孤立奇点为 $z_1,\dots,z_m$：
 
-$
+$$
 \oint_\gamma f(z)\,dz
 =
 2\pi i
 \sum_{k=1}^{m}
 \operatorname{Res}(f,z_k).
-$
+$$
 
 这是一种极强的局部—全局关系。
 
@@ -78,58 +78,58 @@ $
 
 若
 
-$
+$$
 f(z)=\frac{g(z)}{h(z)},
 \quad
 h(z_0)=0,\quad h'(z_0)\ne0,
-$
+$$
 
 则
 
-$
+$$
 \operatorname{Res}(f,z_0)
 =
 \frac{g(z_0)}{h'(z_0)}.
-$
+$$
 
 ### $m$ 阶极点
 
-$
+$$
 \operatorname{Res}(f,z_0)
 =
 \frac{1}{(m-1)!}
 \lim_{z\to z_0}
 \frac{d^{m-1}}{dz^{m-1}}
 \left[(z-z_0)^m f(z)\right].
-$
+$$
 
 ## 6. 一个经典用途：算实积分
 
 例如
 
-$
+$$
 \int_{-\infty}^{\infty}\frac{dx}{x^2+1}.
-$
+$$
 
 把实变量 $x$ 扩展到复平面，考虑
 
-$
+$$
 f(z)=\frac{1}{z^2+1}
 =
 \frac{1}{(z-i)(z+i)}.
-$
+$$
 
 上半平面只有极点 $z=i$。其留数为
 
-$
+$$
 \operatorname{Res}(f,i)=\frac{1}{2i}.
-$
+$$
 
 于是半圆轮廓积分给出
 
-$
+$$
 2\pi i\cdot\frac{1}{2i}=\pi.
-$
+$$
 
 实轴积分因此等于 $\pi$。
 
@@ -160,9 +160,9 @@ python labs/06_residue_numeric.py
 
 脚本用数值积分沿圆周计算
 
-$
+$$
 \oint \frac{dz}{z-z_0}
-$
+$$
 
 并观察其趋近 $2\pi i$。
 
