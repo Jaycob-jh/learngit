@@ -24,7 +24,7 @@ Gauss 在 1827/1828 年的 curved surfaces 工作中系统发展曲面内在几�
 
 $$
 ds^2
-=
+\mathrel{=}
 \sum_{i,j}
 g_{ij}\,dx^i dx^j.
 $$
@@ -43,7 +43,7 @@ $$
 \Gamma^k_{ij}
 \frac{dx^i}{dt}
 \frac{dx^j}{dt}
-=
+\mathrel{=}
 0.
 $$
 

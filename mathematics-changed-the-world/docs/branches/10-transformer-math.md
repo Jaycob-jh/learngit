@@ -34,7 +34,7 @@ attention logits：
 
 $$
 S
-=
+\mathrel{=}
 \frac{QK^T}{\sqrt{d_k}}.
 $$
 
@@ -58,7 +58,7 @@ $$
 
 $$
 A_{ij}
-=
+\mathrel{=}
 \frac{e^{S_{ij}}}
 {\sum_j e^{S_{ij}}}.
 $$
@@ -83,7 +83,7 @@ $$
 
 $$
 \operatorname{head}_h
-=
+\mathrel{=}
 \operatorname{Attention}(Q_h,K_h,V_h).
 $$
 
@@ -99,7 +99,7 @@ $$
 
 $$
 PE(pos,2i)
-=
+\mathrel{=}
 \sin
 \left(
 pos/10000^{2i/d}
@@ -108,7 +108,7 @@ $$
 
 $$
 PE(pos,2i+1)
-=
+\mathrel{=}
 \cos
 \left(
 pos/10000^{2i/d}
@@ -125,7 +125,7 @@ $$
 
 $$
 L
-=
+\mathrel{=}
 -\sum_t \log p(x_t|x_{<t}).
 $$
 
@@ -133,7 +133,7 @@ $$
 
 $$
 H(p,q)
-=
+\mathrel{=}
 -\sum_i p_i\log q_i.
 $$
 

@@ -20,7 +20,7 @@ $$
 
 $$
 \operatorname{STFT}_x(\tau,\omega)
-=
+\mathrel{=}
 \int
 x(t)w(t-\tau)e^{-i\omega t}\,dt.
 $$
@@ -33,7 +33,7 @@ $$
 
 $$
 W_x(a,b)
-=
+\mathrel{=}
 \frac1{\sqrt{|a|}}
 \int
 x(t)

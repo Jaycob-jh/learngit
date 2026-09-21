@@ -78,7 +78,7 @@ $$
 
 $$
 L(x,\lambda)
-=
+\mathrel{=}
 f_0(x)+\sum_i\lambda_i f_i(x).
 $$
 

@@ -44,7 +44,7 @@ log 正好把 multiplication 变 addition。
 
 $$
 H(X)
-=
+\mathrel{=}
 -\sum_x p(x)\log p(x).
 $$
 
@@ -56,7 +56,7 @@ $$
 
 $$
 H
-=
+\mathrel{=}
 -\frac12\log_2\frac12
 -\frac12\log_2\frac12
 =1.
@@ -68,7 +68,7 @@ $$
 
 $$
 I(X;Y)
-=
+\mathrel{=}
 H(X)-H(X|Y).
 $$
 
@@ -80,7 +80,7 @@ $$
 
 $$
 D_{\mathrm{KL}}(p\|q)
-=
+\mathrel{=}
 \sum_x p(x)\log\frac{p(x)}{q(x)}.
 $$
 

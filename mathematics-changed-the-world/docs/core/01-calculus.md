@@ -41,7 +41,7 @@ $$
 
 $$
 \frac{A(x+h)-A(x)}{h}
-=
+\mathrel{=}
 \frac{1}{h}\int_x^{x+h}f(t)\,dt.
 $$
 

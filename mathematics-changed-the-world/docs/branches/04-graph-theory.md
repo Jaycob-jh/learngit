@@ -88,7 +88,7 @@ GNN 常把邻居信息聚合：
 
 $$
 h_v^{(l+1)}
-=
+\mathrel{=}
 \operatorname{UPDATE}
 \left(
 h_v^{(l)},

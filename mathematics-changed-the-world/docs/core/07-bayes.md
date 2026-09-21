@@ -18,9 +18,9 @@ $$
 
 $$
 P(A\cap B)
-=
+\mathrel{=}
 P(B|A)P(A)
-=
+\mathrel{=}
 P(A|B)P(B).
 $$
 
@@ -28,7 +28,7 @@ $$
 
 $$
 P(A|B)
-=
+\mathrel{=}
 \frac{P(B|A)P(A)}{P(B)}.
 $$
 
@@ -48,7 +48,7 @@ Pierre-Simon Laplace 随后大幅推广“逆概率”方法，把它应用到�
 
 $$
 p(\theta|D)
-=
+\mathrel{=}
 \frac{p(D|\theta)p(\theta)}{p(D)}.
 $$
 
@@ -79,7 +79,7 @@ $$
 
 $$
 P(D|+)
-=
+\mathrel{=}
 \frac{P(+|D)P(D)}
 {P(+|D)P(D)+P(+|\neg D)P(\neg D)}.
 $$
@@ -150,7 +150,7 @@ $$
 
 $$
 \theta_{\text{MLE}}
-=
+\mathrel{=}
 \arg\max_\theta p(D|\theta).
 $$
 
@@ -158,7 +158,7 @@ $$
 
 $$
 \theta_{\text{MAP}}
-=
+\mathrel{=}
 \arg\max_\theta
 p(D|\theta)p(\theta).
 $$

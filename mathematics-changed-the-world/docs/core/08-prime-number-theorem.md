@@ -34,7 +34,7 @@ $$
 
 $$
 \operatorname{li}(x)
-=
+\mathrel{=}
 \operatorname{PV}\int_0^x\frac{dt}{\log t}
 $$
 
@@ -52,7 +52,7 @@ $$
 \lim_{x\to\infty}
 \frac{\pi(x)}
 {x/\log x}
-=
+\mathrel{=}
 1.
 $$
 
@@ -68,9 +68,9 @@ Euler 发现 zeta function 的乘积结构：
 
 $$
 \zeta(s)
-=
+\mathrel{=}
 \sum_{n=1}^{\infty}\frac1{n^s}
-=
+\mathrel{=}
 \prod_{p}
 \frac{1}{1-p^{-s}}
 \quad

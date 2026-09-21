@@ -86,7 +86,7 @@ $$
 
 $$
 \hat x_{k|k}
-=
+\mathrel{=}
 \hat x_{k|k-1}
 +
 K_k(y_k-H\hat x_{k|k-1}).
@@ -107,7 +107,7 @@ $$
 
 $$
 J
-=
+\mathrel{=}
 \int
 (x^TQx+u^TRu)\,dt,
 $$

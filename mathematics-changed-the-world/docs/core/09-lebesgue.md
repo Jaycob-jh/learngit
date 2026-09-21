@@ -26,7 +26,7 @@ Lebesgue 的革命性想法可以粗略描述为：
 
 $$
 \phi
-=
+\mathrel{=}
 \sum_{k=1}^{m}a_k\mathbf 1_{E_k},
 \qquad a_k\ge0,
 $$
@@ -35,7 +35,7 @@ $$
 
 $$
 \int\phi\,d\mu
-=
+\mathrel{=}
 \sum_{k=1}^{m}a_k\mu(E_k).
 $$
 
@@ -61,7 +61,7 @@ $$
 
 $$
 \int f\,d\mu
-=
+\mathrel{=}
 \lim_{n\to\infty}
 \int f_n\,d\mu.
 $$
@@ -137,7 +137,7 @@ $$
 
 $$
 E[X]
-=
+\mathrel{=}
 \int_\Omega X\,dP
 $$
 

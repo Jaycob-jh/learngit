@@ -30,7 +30,7 @@ Markov process 的核心条件可粗略写为：
 
 $$
 P(X_{t+1}|X_t,X_{t-1},\dots)
-=
+\mathrel{=}
 P(X_{t+1}|X_t).
 $$
 
@@ -63,7 +63,7 @@ $$
 
 $$
 dX_t
-=
+\mathrel{=}
 \mu(X_t,t)\,dt
 +
 \sigma(X_t,t)\,dW_t.
@@ -81,7 +81,7 @@ $$
 
 $$
 df(X_t)
-=
+\mathrel{=}
 f'(X_t)dX_t
 +
 \frac12f''(X_t)\sigma^2dt.

@@ -21,7 +21,7 @@
 
 $$
 \hat p_n
-=
+\mathrel{=}
 \frac1n\sum_{i=1}^n X_i
 $$
 
@@ -70,7 +70,7 @@ $$
 
 $$
 P\left(\bigcup_iA_i\right)
-=
+\mathrel{=}
 \sum_iP(A_i).
 $$
 
@@ -88,7 +88,7 @@ distribution：
 
 $$
 P_X(B)
-=
+\mathrel{=}
 P(X\in B).
 $$
 
@@ -98,7 +98,7 @@ $$
 
 $$
 E[X]
-=
+\mathrel{=}
 \int_\Omega X\,dP.
 $$
 

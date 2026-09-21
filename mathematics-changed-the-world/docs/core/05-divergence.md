@@ -9,7 +9,7 @@
 $$
 \iiint_{\Omega}
 \nabla\cdot\mathbf F\,dV
-=
+\mathrel{=}
 \iint_{\partial\Omega}
 \mathbf F\cdot\mathbf n\,dS.
 $$
@@ -29,7 +29,7 @@ $$
 
 $$
 \nabla\cdot\mathbf F
-=
+\mathrel{=}
 \frac{\partial F_x}{\partial x}
 +
 \frac{\partial F_y}{\partial y}
@@ -70,7 +70,7 @@ $$
 
 $$
 \int_{\Omega}\nabla\cdot F
-=
+\mathrel{=}
 \int_{\partial\Omega}F\cdot n.
 $$
 
@@ -78,7 +78,7 @@ $$
 
 $$
 \int_M d\omega
-=
+\mathrel{=}
 \int_{\partial M}\omega.
 $$
 

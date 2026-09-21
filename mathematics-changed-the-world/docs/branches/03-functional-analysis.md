@@ -39,7 +39,7 @@ $$
 
 $$
 \langle f,g\rangle
-=
+\mathrel{=}
 \int_a^b f(x)\overline{g(x)}\,dx.
 $$
 

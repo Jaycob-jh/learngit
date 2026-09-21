@@ -8,7 +8,7 @@ Joseph Fourier 研究一根金属杆如何传热，得到热方程
 
 $$
 \frac{\partial u}{\partial t}
-=
+\mathrel{=}
 \alpha\frac{\partial^2u}{\partial x^2}.
 $$
 
@@ -43,7 +43,7 @@ $$
 
 $$
 F(\omega)
-=
+\mathrel{=}
 \int_{-\infty}^{\infty}
 f(t)e^{-i\omega t}\,dt.
 $$
@@ -52,7 +52,7 @@ $$
 
 $$
 f(t)
-=
+\mathrel{=}
 \frac{1}{2\pi}
 \int_{-\infty}^{\infty}
 F(\omega)e^{i\omega t}\,d\omega.
@@ -66,7 +66,7 @@ $$
 
 $$
 \mathcal F\{f'(t)\}
-=
+\mathrel{=}
 i\omega F(\omega).
 $$
 
@@ -76,7 +76,7 @@ $$
 
 $$
 \mathcal F\{f*g\}
-=
+\mathrel{=}
 F(\omega)G(\omega).
 $$
 

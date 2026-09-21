@@ -14,19 +14,19 @@
 
 $$
 e^x
-=
+\mathrel{=}
 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots,
 $$
 
 $$
 \cos x
-=
+\mathrel{=}
 1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots,
 $$
 
 $$
 \sin x
-=
+\mathrel{=}
 x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots.
 $$
 
@@ -34,7 +34,7 @@ $$
 
 $$
 e^{i\theta}
-=
+\mathrel{=}
 1+i\theta-\frac{\theta^2}{2!}
 -i\frac{\theta^3}{3!}
 +\frac{\theta^4}{4!}+\cdots.
@@ -44,7 +44,7 @@ $$
 
 $$
 e^{i\theta}
-=
+\mathrel{=}
 \cos\theta+i\sin\theta.
 $$
 
@@ -87,7 +87,7 @@ $$
 
 $$
 \frac{d}{dt}e^{i\omega t}
-=
+\mathrel{=}
 i\omega e^{i\omega t}.
 $$
 
@@ -97,7 +97,7 @@ $$
 
 $$
 A\cos(\omega t+\phi)
-=
+\mathrel{=}
 \Re\{Ae^{i(\omega t+\phi)}\}.
 $$
 

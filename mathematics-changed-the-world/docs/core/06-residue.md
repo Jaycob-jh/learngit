@@ -50,7 +50,7 @@ $$
 
 $$
 \oint\frac{dz}{z-z_0}
-=
+\mathrel{=}
 2\pi i.
 $$
 
@@ -64,7 +64,7 @@ $$
 
 $$
 \oint_\gamma f(z)\,dz
-=
+\mathrel{=}
 2\pi i
 \sum_{k=1}^{m}
 \operatorname{Res}(f,z_k).
@@ -88,7 +88,7 @@ $$
 
 $$
 \operatorname{Res}(f,z_0)
-=
+\mathrel{=}
 \frac{g(z_0)}{h'(z_0)}.
 $$
 
@@ -96,7 +96,7 @@ $$
 
 $$
 \operatorname{Res}(f,z_0)
-=
+\mathrel{=}
 \frac{1}{(m-1)!}
 \lim_{z\to z_0}
 \frac{d^{m-1}}{dz^{m-1}}
@@ -115,7 +115,7 @@ $$
 
 $$
 f(z)=\frac{1}{z^2+1}
-=
+\mathrel{=}
 \frac{1}{(z-i)(z+i)}.
 $$
 

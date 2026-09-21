@@ -50,7 +50,7 @@ $$
 
 $$
 p(z)
-=
+\mathrel{=}
 a\prod_{k=1}^{n}(z-z_k).
 $$
 
@@ -60,7 +60,7 @@ $$
 
 $$
 e^{i\theta}
-=
+\mathrel{=}
 \cos\theta+i\sin\theta.
 $$
 
