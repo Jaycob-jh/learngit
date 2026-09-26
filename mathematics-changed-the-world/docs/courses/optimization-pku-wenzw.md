@@ -176,14 +176,40 @@
 - 文再文、袁亚湘：《最优化方法与理论》
 - ISBN：`978-7-04-062561-5`
 
-它可作为 optbook 体系之后的更新/进阶教材入口；本页不假定它替代旧教材，而把它作为后续资源并列保留。
+高等教育出版社当前产品页：
+
+- https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=66be39c274ce561611bda4a1
+- 出版时间：`2025-01-16`
+- 版次：1
+
+它可作为 optbook 体系之后的更新/进阶教材入口；本页不假定它替代旧教材，而把它作为后续资源并列保留。出版社页与北大“101 计划”页对作者和 ISBN 的记录一致。
 
 ### 6.4 可选研究线：Lean4 形式化
 
-- 项目：https://github.com/optsuite/optlib
+核心入口：
+
+- Optlib：https://github.com/optsuite/optlib
+- ReasLab：https://reaslab.io/
+- ReasBook：https://github.com/optpku/ReasBook
 - 中文安装/训练入口：http://faculty.bicmr.pku.edu.cn/~wenzw/formal/index.html
 
-当前公开项目把凸分析/凸优化、非线性规划、整数规划等内容形式化到 Lean4，并把数值线性代数、数值分析、高维概率列为相关方向。它适合放在“已经会推导和实现算法”之后，不建议替代常规分析与数值训练。
+Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳入 Lean4 形式化，已经列出梯度下降、近似点梯度 / Nesterov、分块坐标下降和 ADMM 等算法方向；其教材形式化项目还覆盖数值线性代数和高维概率。当前公开工具链还包括：
+
+- M2F：https://github.com/optsuite/M2F
+- SITA：https://github.com/chenyili0818/SITA
+- lean-tools-mcp：https://github.com/optsuite/lean-tools-mcp
+
+这些资源适合放在“已经会推导和实现算法”之后，用来训练机器可检查的定义、定理和收敛证明；它们不替代常规分析与数值训练。
+
+### 6.5 代码资源：流形优化与正交约束
+
+文再文公开的 optsuite 代码组织：
+
+- https://github.com/optsuite
+- ARNT：https://github.com/optsuite/ARNT
+- OptM：https://github.com/optsuite/OptM
+
+其中 ARNT 是面向 Riemannian manifold optimization 的 MATLAB 软件，OptM 面向正交约束优化。它们可作为第二版“流形约束优化”章节的算法实现补充；**这里仅把它们作为代码入口，不把它们当作“流形约束优化电子讲义已经存在”的证据**。
 
 ## 7. 建议的学习任务顺序
 
@@ -260,6 +286,9 @@
 | C7 | optlib 的 Lean4 方向 | 描述性 | 高 | 项目仓库与公开说明 |
 | C8 | 27 个讲义主题 / 33 个 PDF URL | 来源记录 | 高（用户提供并确认可访问） | 保留原 URL 与协助准备者；自动抓取 502 不等同失效 |
 | C9 | 第二版新增流形约束优化、半光滑 Newton 并完善教学资源 | 描述性 | 高 | 用户提供的第二版 PDF，2025-02 前言 |
+| C10 | 《最优化方法与理论》ISBN `978-7-04-062561-5`、版次 1、出版时间 `2025-01-16` | 描述性 | 高 | 高等教育出版社产品页；北大“101 计划”页交叉核对作者与 ISBN |
+| C11 | Optlib / ReasLab / ReasBook 及 M2F、SITA、lean-tools-mcp 构成当前公开形式化资源链 | 来源记录 | 高 | Optlib 当前 README 逐项链接 |
+| C12 | ARNT / OptM 是 optsuite 下的流形优化与正交约束公开代码资源 | 来源记录 | 高 | optsuite GitHub 公开仓库；不据此推断流形讲义 PDF 已发布 |
 
 ### Protected elements
 
@@ -268,6 +297,7 @@
 - `9787040550351`
 - `978-7-04-055841-8`
 - `978-7-04-062561-5`
+- `2025-01-16`
 - `00130630`
 - `00136720`
 - 本页所有 URL
