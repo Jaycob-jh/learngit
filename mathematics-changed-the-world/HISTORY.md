@@ -502,3 +502,12 @@ repair display math delimiters
 - 不根据命名规律猜测未验证 URL。
 
 编辑与 QA 采用 `Jaycob-jh/editorial-agent-framework` 的 technical-docs 路线：数字、ISBN、课程号、URL 和不确定性边界严格保留。同步更新 MkDocs 导航、凸优化章节、学习路线、现代参考资料与文档首页，并建立每小时巡检日志。
+
+
+### 2026-09-26｜补全 optbook 电子讲义索引
+
+用户提供并确认 optbook 目录页及电子讲义可访问。新增 `docs/courses/optimization-pku-wenzw-lectures.md`，逐项登记 27 个教学主题、33 个 PDF URL 与协助准备者，并按教材章节重组学习顺序。
+
+同时根据用户提供的《最优化：建模、算法与理论》第二版 PDF 更新版本记录：第二版前言署于 2025 年 2 月，明确新增流形约束优化和半光滑牛顿算法，并完善代码、网页、习题答案和电子教案讲义。当前讲义表已有半光滑 Newton，但未单列流形约束优化讲义，因此后续自动巡检将其作为明确待发现项。
+
+维护策略同步调整：即使自动抓取环境对 `faculty.bicmr.pku.edu.cn` 返回 502/timeout，只要用户已确认具体讲义 URL 可访问，就只标记为“自动抓取不可达”，不自动删除或判定资源失效。

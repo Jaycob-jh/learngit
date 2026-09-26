@@ -25,6 +25,7 @@ nav:
   - 知识图谱: knowledge-graph.md
   - 课程体系:
       - 北大最优化体系（文再文）: courses/optimization-pku-wenzw.md
+      - optbook 电子讲义索引: courses/optimization-pku-wenzw-lectures.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md
