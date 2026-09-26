@@ -78,6 +78,19 @@
   https://web.stanford.edu/~boyd/cvxbook/
 - Boyd, *Overview of Convex Optimization*  
   https://web.stanford.edu/~boyd/papers/cvx_opt_overview.html
+- 北京大学数学科学学院 — 《最优化方法》（课程号 00130630）  
+  https://math.pku.edu.cn/bks/sykc/148761.htm
+- 文再文等 — optbook 教材/程序入口  
+  http://faculty.bicmr.pku.edu.cn/~wenzw/optbook.html
+- 华文慕课 — 《最优化方法》  
+  https://www.chinesemooc.org/web/course_detail.php?courseid=5063
+- 北京大学数学科学学院 — 《大数据分析中的算法》（课程号 00136720）  
+  https://math.pku.edu.cn/bks/sykc/148668.htm
+- 华文慕课 — 《大数据分析中的算法》  
+  https://www.chinesemooc.org/web/course_detail.php?courseid=4974
+- 北京大学“101 计划” — 文再文、袁亚湘《最优化方法与理论》  
+  https://math101.pku.edu.cn/hxjc/qb/3489f4fc70974d0da96ce949939fd3b8.htm
+- 本项目整理：[北大文再文最优化学习体系](courses/optimization-pku-wenzw.md)
 
 ## Transformer / AI
 

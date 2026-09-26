@@ -88,6 +88,10 @@ number theory → algebra → probability → complexity/computability。
 
 ---
 
+## 课程体系
+
+- [北大文再文最优化学习体系](courses/optimization-pku-wenzw.md) — 将教材、课程、代码、进阶算法与形式化入口串成可持续更新的课程路线，并显式记录来源等级与待复核项。
+
 ## 实验室
 
 见 [数学实验室](../labs/README.md)。

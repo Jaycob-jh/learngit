@@ -485,3 +485,20 @@ repair display math delimiters
 ```
 
 这样 `HISTORY.md` 将同时承担项目开发日志和内容版本历史的作用。
+
+
+---
+
+## 2026-09-26｜纳入北大最优化课程体系
+
+新增 `docs/courses/optimization-pku-wenzw.md`，把文再文 optbook 教材、北京大学《最优化方法》、北京大学《大数据分析中的算法》、算法代码入口与 Lean4 形式化方向接入现有数学知识库。
+
+本轮原始 `faculty.bicmr.pku.edu.cn/~wenzw/optbook.html` 返回 502 / 不可访问，因此按来源等级处理：
+
+- 主页面镜像逐项保留 12 个外链；
+- 独立搜索/文献索引确认 5 个内部算法/目录子页；
+- 北京大学数学科学学院与北京大学“101 计划”页面作为高等级课程/教材证据；
+- 2025 春 `bigdata2025.html` 暂列二级证据，等待原站恢复后复核；
+- 不根据命名规律猜测未验证 URL。
+
+编辑与 QA 采用 `Jaycob-jh/editorial-agent-framework` 的 technical-docs 路线：数字、ISBN、课程号、URL 和不确定性边界严格保留。同步更新 MkDocs 导航、凸优化章节、学习路线、现代参考资料与文档首页，并建立每小时巡检日志。

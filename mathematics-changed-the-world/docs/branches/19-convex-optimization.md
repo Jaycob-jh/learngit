@@ -156,3 +156,9 @@ $$
 
 - Boyd & Vandenberghe, *Convex Optimization*: https://web.stanford.edu/~boyd/cvxbook/
 - Boyd, *Overview of Convex Optimization*: https://web.stanford.edu/~boyd/papers/cvx_opt_overview.html
+
+## 课程化学习入口
+
+如果希望把本章扩展成完整课程路线，进入 [北大文再文最优化学习体系](../courses/optimization-pku-wenzw.md)。
+
+该路线把凸分析、最优性理论、无约束/约束/复合优化、大规模与随机算法，以及数据问题中的优化串成一条主线；同时保留教材、课程、代码与来源的证据状态。
