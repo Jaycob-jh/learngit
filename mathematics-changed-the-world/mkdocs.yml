@@ -31,6 +31,7 @@ nav:
           - 01 基础语言: courses/optimization-pku-wenzw-study-units/01-foundations.md
           - 02 优化建模: courses/optimization-pku-wenzw-study-units/02-modeling.md
           - 03 最优性理论: courses/optimization-pku-wenzw-study-units/03-optimality.md
+          - 04 无约束优化算法: courses/optimization-pku-wenzw-study-units/04-unconstrained.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md

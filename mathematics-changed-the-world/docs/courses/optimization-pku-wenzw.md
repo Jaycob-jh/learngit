@@ -219,7 +219,8 @@ Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳�
 - [Unit 01｜最优化的基础语言](optimization-pku-wenzw-study-units/01-foundations.md)
 - [Unit 02｜优化建模与典型优化问题](optimization-pku-wenzw-study-units/02-modeling.md)
 - [Unit 03｜最优性理论](optimization-pku-wenzw-study-units/03-optimality.md)
-- 配套实验：`labs/13_optimization_convexity.py`、`labs/14_optimization_modeling.py`、`labs/15_optimization_optimality.py`
+- [Unit 04｜无约束优化算法](optimization-pku-wenzw-study-units/04-unconstrained.md)
+- 配套实验：`labs/13_optimization_convexity.py`、`labs/14_optimization_modeling.py`、`labs/15_optimization_optimality.py`、`labs/16_optimization_unconstrained.py`
 
 学习路线按“问题与基础 → 建模 → 最优性 → 无约束 → 约束 → 复合 → 随机/非光滑 → 流形 → 应用 → 形式化”组织，不要求按照 PDF 文件编号机械阅读。
 

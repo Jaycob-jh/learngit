@@ -30,6 +30,7 @@ pip install -r requirements-labs.txt
 13. \`13_optimization_convexity.py\`：凸性不等式抽样检查 + 条件数对梯度下降收敛的影响。
 14. \`14_optimization_modeling.py\`：比较 L2/L1 残差与 ridge/LASSO，观察建模选择如何改变解。
 15. \`15_optimization_optimality.py\`：驻点/二阶条件、约束品性与 KKT、Slater 与强对偶。
+16. \`16_optimization_unconstrained.py\`：统一比较 Gradient/BB/Newton/BFGS/Trust Region，并演示 Gauss-Newton/LM 非线性最小二乘。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
 

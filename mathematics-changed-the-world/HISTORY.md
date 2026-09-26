@@ -538,3 +538,12 @@ Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归
 保留教材的关键逻辑边界：`∇f(x*)=0` 只是无约束光滑局部最优的必要条件；一般约束问题的 KKT 在相应约束品性下是必要条件而非充分条件；当凸问题满足 Slater 时，强对偶成立，KKT 才升级为原始/对偶全局最优的充要条件。
 
 新增 `labs/15_optimization_optimality.py`，包含三个实验：`x^3` 与 `x^4` 展示“驻点不等于最优点”和二阶条件边界；同一可行域 `x=0` 与 `x^2=0` 展示约束表达退化导致 KKT 必要性失效；凸问题 `min (x-2)^2, s.t. x<=1` 显式验证 Slater、KKT、对偶函数与零对偶间隙。
+
+
+### 2026-09-27｜完成 Unit 04：无约束优化算法
+
+新增 `docs/courses/optimization-pku-wenzw-study-units/04-unconstrained.md`，依据第二版教材第 6 章，把线搜索、梯度/BB、Newton/修正 Newton、BFGS/L-BFGS、信赖域和非线性最小二乘统一为“局部模型 → 搜索方向/子问题 → 全局化策略 → 收敛速度”的框架。第 6.3 节次梯度算法保留为教材交叉内容，但按本路线延后到非光滑/随机单元集中处理。
+
+该单元保留教材的收敛条件边界：Armijo/Wolfe 不是任意下降步长；梯度法在凸光滑问题上为函数值 O(1/k)、强凸条件下 Q-线性；经典 Newton 的 Q-二次速度是局部结论且依赖 Hessian Lipschitz、最优点 Hessian 正定与足够近的初值；BFGS 的全局收敛结论依赖 Wolfe 与函数曲率条件，Q-超线性结论也有额外前提；Gauss-Newton 主要针对小残量问题，不能无条件宣称二次收敛。
+
+新增 `labs/16_optimization_unconstrained.py`：Rosenbrock 实验统一比较 gradient+Armijo、BB+非单调 Armijo、modified Newton+Armijo、BFGS+Armijo 与 trust-region 二次模型；非线性指数拟合实验比较 Gauss-Newton 与 LM 型阻尼更新，并记录梯度/残差范数与迭代次数。实验明确仅用于观察算法机制，不用于给算法做普遍排名。

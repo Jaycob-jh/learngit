@@ -63,7 +63,11 @@
 
 **资源**：梯度下降、次梯度及次梯度算法、Newton、拟 Newton、信赖域、非线性最小二乘、教材第 6 章。
 
-统一视角：局部模型 → 搜索方向 → 步长/区域 → 更新 → 停止准则 → 收敛性。需要比较 gradient、BB、Newton、BFGS/L-BFGS、trust-region、Gauss-Newton、Levenberg-Marquardt。
+统一视角：局部模型 → 搜索方向 → 全局化策略 → 收敛速度。比较 gradient、BB、Newton/modified Newton、BFGS/L-BFGS、trust-region、Gauss-Newton、Levenberg-Marquardt。
+
+进入：[Unit 04 学习单元](optimization-pku-wenzw-study-units/04-unconstrained.md)
+
+实验：`labs/16_optimization_unconstrained.py`
 
 ## Unit 05｜约束优化：罚函数、ALM 与内点法
 
