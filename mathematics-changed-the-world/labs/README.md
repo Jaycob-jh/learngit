@@ -27,6 +27,7 @@ pip install -r requirements-labs.txt
 10. \`10_kalman_filter.py\`：状态空间 + Gaussian update。
 11. \`11_wavelet_demo.py\`：离散小波多尺度分解。
 12. \`12_attention_heatmap.py\`：scaled dot-product attention。
+13. \`13_optimization_convexity.py\`：凸性不等式抽样检查 + 条件数对梯度下降收敛的影响。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
 

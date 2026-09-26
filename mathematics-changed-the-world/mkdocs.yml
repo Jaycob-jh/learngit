@@ -26,6 +26,9 @@ nav:
   - 课程体系:
       - 北大最优化体系（文再文）: courses/optimization-pku-wenzw.md
       - optbook 电子讲义索引: courses/optimization-pku-wenzw-lectures.md
+      - 系统学习路线: courses/optimization-pku-wenzw-study-roadmap.md
+      - 学习单元:
+          - 01 基础语言: courses/optimization-pku-wenzw-study-units/01-foundations.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md
