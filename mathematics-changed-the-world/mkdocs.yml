@@ -29,6 +29,7 @@ nav:
       - 系统学习路线: courses/optimization-pku-wenzw-study-roadmap.md
       - 学习单元:
           - 01 基础语言: courses/optimization-pku-wenzw-study-units/01-foundations.md
+          - 02 优化建模: courses/optimization-pku-wenzw-study-units/02-modeling.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md

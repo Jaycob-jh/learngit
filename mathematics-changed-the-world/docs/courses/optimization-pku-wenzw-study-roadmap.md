@@ -45,6 +45,10 @@
 
 目标：从现实描述提取变量、目标函数、约束、正则化/松弛/等价变换和问题类别。重点模型包括 least squares、LASSO、logistic regression、SVM、低秩恢复、相位恢复、PCA、TV、小波和随机优化。
 
+进入：[Unit 02 学习单元](optimization-pku-wenzw-study-units/02-modeling.md)
+
+实验：`labs/14_optimization_modeling.py`
+
 ## Unit 03｜最优性：什么叫“解对了”
 
 **资源**：凸优化最优性理论、非凸优化最优性理论、教材第 5 章。

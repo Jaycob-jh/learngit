@@ -520,3 +520,12 @@ repair display math delimiters
 完成首个学习单元 `optimization-pku-wenzw-study-units/01-foundations.md`，覆盖最优化问题的一般形式、问题分类、凸集、凸函数、范数/梯度/Hessian 与数值代数的算法角色；内容采用导学、练习和边界条件形式，不复刻教材或讲义正文。
 
 新增 `labs/13_optimization_convexity.py`，用随机凸性不等式检查和不同条件数的二次问题说明“凸性”与“数值 conditioning”两个概念，并明确数值试验不构成数学证明。
+
+
+### 2026-09-26｜完成 Unit 02：优化建模与典型优化问题
+
+新增 `docs/courses/optimization-pku-wenzw-study-units/02-modeling.md`，依据第二版教材第 3–4 章把建模过程组织为“现实问题 → 决策变量 → 目标函数 → 约束 → 正则化/松弛/等价变换 → 问题分类”。
+
+Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归的 least-squares 与 maximum-likelihood 对应；松弛问题一般不自动等价于原问题，`ℓ0 → ℓ1` 与 `rank → nuclear norm` 的恢复需要额外条件。模型地图覆盖 regression、LASSO、logistic regression、SVM、概率图模型、phase retrieval、PCA、matrix separation、dictionary learning、K-means、TV、小波和 reinforcement learning，并与第 4 章的 LP、least-squares、composite、stochastic、SDP、matrix、integer 等问题类别对应。
+
+新增 `labs/14_optimization_modeling.py`：第一部分在含离群点的同一组回归数据上比较 L2 least-squares 与 L1 least-absolute-deviations；第二部分比较 ridge 与 LASSO 的系数结构。实验用于观察“模型选择改变答案”，不把简单数值求解器当作后续算法章节的替代。
