@@ -529,3 +529,12 @@ repair display math delimiters
 Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归的 least-squares 与 maximum-likelihood 对应；松弛问题一般不自动等价于原问题，`ℓ0 → ℓ1` 与 `rank → nuclear norm` 的恢复需要额外条件。模型地图覆盖 regression、LASSO、logistic regression、SVM、概率图模型、phase retrieval、PCA、matrix separation、dictionary learning、K-means、TV、小波和 reinforcement learning，并与第 4 章的 LP、least-squares、composite、stochastic、SDP、matrix、integer 等问题类别对应。
 
 新增 `labs/14_optimization_modeling.py`：第一部分在含离群点的同一组回归数据上比较 L2 least-squares 与 L1 least-absolute-deviations；第二部分比较 ridge 与 LASSO 的系数结构。实验用于观察“模型选择改变答案”，不把简单数值求解器当作后续算法章节的替代。
+
+
+### 2026-09-27｜完成 Unit 03：最优性理论
+
+新增 `docs/courses/optimization-pku-wenzw-study-units/03-optimality.md`，严格按第二版教材第 5 章组织：解的存在性/唯一性 → 无约束可微一阶与二阶条件 → 不可微凸与复合最优性 → Lagrangian/duality → 一般约束问题的 KKT 与约束品性 → 临界锥上的二阶条件 → Slater、强对偶与凸问题 KKT 充要性。
+
+保留教材的关键逻辑边界：`∇f(x*)=0` 只是无约束光滑局部最优的必要条件；一般约束问题的 KKT 在相应约束品性下是必要条件而非充分条件；当凸问题满足 Slater 时，强对偶成立，KKT 才升级为原始/对偶全局最优的充要条件。
+
+新增 `labs/15_optimization_optimality.py`，包含三个实验：`x^3` 与 `x^4` 展示“驻点不等于最优点”和二阶条件边界；同一可行域 `x=0` 与 `x^2=0` 展示约束表达退化导致 KKT 必要性失效；凸问题 `min (x-2)^2, s.t. x<=1` 显式验证 Slater、KKT、对偶函数与零对偶间隙。

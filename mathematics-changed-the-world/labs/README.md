@@ -29,6 +29,7 @@ pip install -r requirements-labs.txt
 12. \`12_attention_heatmap.py\`：scaled dot-product attention。
 13. \`13_optimization_convexity.py\`：凸性不等式抽样检查 + 条件数对梯度下降收敛的影响。
 14. \`14_optimization_modeling.py\`：比较 L2/L1 残差与 ridge/LASSO，观察建模选择如何改变解。
+15. \`15_optimization_optimality.py\`：驻点/二阶条件、约束品性与 KKT、Slater 与强对偶。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
 

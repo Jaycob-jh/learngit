@@ -55,6 +55,10 @@
 
 目标：存在性与唯一性；一阶/二阶必要与充分条件；对偶；KKT 与约束品性；严格区分局部最优、全局最优和驻点。
 
+进入：[Unit 03 学习单元](optimization-pku-wenzw-study-units/03-optimality.md)
+
+实验：`labs/15_optimization_optimality.py`
+
 ## Unit 04｜无约束算法：从梯度到信赖域
 
 **资源**：梯度下降、次梯度及次梯度算法、Newton、拟 Newton、信赖域、非线性最小二乘、教材第 6 章。
