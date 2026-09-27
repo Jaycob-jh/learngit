@@ -18,6 +18,11 @@
 - 在 Unit 07 页面和 `labs/19_optimization_stochastic_nonsmooth.py` 中加入标量 LASSO proximal fixed-point 方程、广义导数选择、与普通 proximal 迭代对照，以及独立的奇异导数停止例。
 - 公式与例子是教学构造；本批不把它归为讲义原文或已验证的运行结果。
 
+## 2026-09-27：Unit 08 Stiefel 例补充
+
+- 在 Unit 08 页面和 `labs/20_optimization_manifold.py` 中加入 $p=2$ 的 Stiefel trace 模型、Riemannian gradient、QR retraction、子空间投影误差及非最优驻点对照。
+- 新增运行记录模板；本批未执行脚本，也未将教学构造当作教材或 ARNT/OptM 的已核对实现。
+
 ## 2026-09-19：项目起点
 
 ### 14:29 左右｜从短视频开始

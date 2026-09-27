@@ -37,7 +37,7 @@ pip install -r requirements-labs.txt
 ## Unit 07–09 待审脚本（本批未运行）
 
 19. \`19_optimization_stochastic_nonsmooth.py\`：次梯度/近端梯度、全梯度/SGD/SVRG，以及标量半光滑 Newton 与奇异导数停止例。
-20. \`20_optimization_manifold.py\`：球面 Rayleigh quotient 的 Riemannian gradient 教学例。
+20. \`20_optimization_manifold.py\`：球面与 Stiefel Rayleigh quotient 的 Riemannian gradient、retraction 和非最优驻点教学例。
 21. \`21_optimization_sparse_recovery.py\`：Unit 09 项目 A，稀疏重建的 ISTA/FISTA。
 22. \`22_optimization_logistic.py\`：Unit 09 项目 B，logistic 分类的全梯度/SGD。
 23. \`23_optimization_phase_retrieval.py\`：Unit 09 项目 C，谱初始化/随机初始化的非凸相位恢复。

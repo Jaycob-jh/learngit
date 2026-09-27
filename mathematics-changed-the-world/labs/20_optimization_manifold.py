@@ -1,4 +1,4 @@
-"""Unit 08 sphere Rayleigh quotient demonstration; not yet run or validated."""
+"""Unit 08 sphere and Stiefel Rayleigh models; not yet run or validated."""
 
 from __future__ import annotations
 
@@ -8,6 +8,13 @@ import time
 from pathlib import Path
 
 import numpy as np
+
+
+def qr_retraction(candidate: np.ndarray) -> np.ndarray:
+    """Thin QR with column-sign correction, so R_X(0)=X for orthonormal X."""
+    q, r = np.linalg.qr(candidate, mode="reduced")
+    signs = np.where(np.diag(r) < 0.0, -1.0, 1.0)
+    return q * signs
 
 
 def main() -> None:
@@ -31,15 +38,38 @@ def main() -> None:
         for k in range(args.iterations + 1):
             value = float(x @ matrix @ x)
             tangent_gradient = 2 * (matrix @ x - value * x)
-            rows.append({"start": start_name, "iteration": k, "rayleigh": value,
-                         "global_minimum": float(eigenvalues[0]),
+            rows.append({"model": "sphere", "start": start_name, "iteration": k,
+                         "objective": value, "reference_minimum": float(eigenvalues[0]),
                          "tangent_gradient_norm": float(np.linalg.norm(tangent_gradient)),
                          "constraint_error": abs(float(x @ x) - 1.0),
+                         "subspace_error": "",
                          "seconds": time.perf_counter() - started})
             if k == args.iterations:
                 break
             candidate = x - 0.08 * tangent_gradient
             x = candidate / np.linalg.norm(candidate)  # sphere retraction
+
+    p = 2
+    target_projector = q[:, :p] @ q[:, :p].T
+    for start_name, x0 in (("random", rng.normal(size=(8, p))),
+                           ("largest_eigenspace", q[:, -p:])):
+        x = qr_retraction(x0)
+        started = time.perf_counter()
+        for k in range(args.iterations + 1):
+            ax = matrix @ x
+            value = float(np.trace(x.T @ ax))
+            euclidean_gradient = 2 * ax
+            sym = 0.5 * (x.T @ euclidean_gradient + euclidean_gradient.T @ x)
+            tangent_gradient = euclidean_gradient - x @ sym
+            rows.append({"model": "stiefel", "start": start_name, "iteration": k,
+                         "objective": value, "reference_minimum": float(eigenvalues[:p].sum()),
+                         "tangent_gradient_norm": float(np.linalg.norm(tangent_gradient)),
+                         "constraint_error": float(np.linalg.norm(x.T @ x - np.eye(p))),
+                         "subspace_error": float(np.linalg.norm(x @ x.T - target_projector)),
+                         "seconds": time.perf_counter() - started})
+            if k == args.iterations:
+                break
+            x = qr_retraction(x - 0.04 * tangent_gradient)
 
     args.csv.parent.mkdir(parents=True, exist_ok=True)
     with args.csv.open("w", encoding="utf-8", newline="") as handle:
