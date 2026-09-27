@@ -30,12 +30,22 @@ $$\operatorname{grad}f(x)=2\bigl(Ax-(x^TAx)x\bigr).$$
 
 [实验脚本](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/20_optimization_manifold.py)拟从不同初值比较 Riemannian gradient 与最小特征值，并记录切向残差。它尚未运行；若初始化在其他特征向量，梯度为零却不对应全局最小值，这是预设的失败案例，不是已观测结果。
 
+### 3.1 Stiefel 上的两个特征向量
+
+将球面例子扩展为 $X\in\mathrm{St}(n,p)$ 上的
+
+$$\min_{X^TX=I_p} F(X)=\operatorname{tr}(X^TAX),\qquad A=A^T.$$
+
+在欧氏诱导度量下，$\nabla F(X)=2AX$，所以 $\operatorname{grad}F(X)=2AX-X\operatorname{sym}(2X^TAX)=2(AX-XX^TAX)$。全局最小目标值是 $A$ 最小的 $p$ 个特征值之和。若最小 $p$ 维子空间与其余谱分离，可以用投影矩阵距离 $\|XX^T-U_{\min}U_{\min}^T\|_F$ 度量所求**子空间**；直接比较 $X$ 和 $U_{\min}$ 的元素会把同一子空间的不同正交基误判为误差。
+
+教学脚本增加 $p=2$ 的例子，用带列符号校正的 thin QR 将切向步映回 Stiefel，并同时记录目标、切向梯度范数、$\|X^TX-I\|_F$ 及子空间距离。以最大特征值对应的二维子空间初始化时，它也是驻点，但不对应全局最小值；这是**预设**的非最优驻点例，仍待运行记录。QR retraction 的实现与教材/ARNT/OptM 的具体约定未逐项对照。
+
 ## 4. 来源与待核对项
 
 | 概念或主张 | 登记来源 | 待核对 |
 |---|---|---|
 | 流形、切空间、retraction、向量传输、一二阶方法 | 教材第二版 7.4 目录 | 逐页核对定义、符号、算法假设与收敛论证 |
 | ARNT、OptM 的实现与适用范围 | 上述代码仓库 | 版本、许可证、实际接口与数值结果；不能推断独立讲义存在 |
-| 球面 Rayleigh quotient 教学模型 | 本页手推 | 脚本复跑、驻点分类与不同初值边界 |
+| 球面与 Stiefel Rayleigh quotient 教学模型 | 本页手推 | 脚本复跑、驻点分类、QR retraction 与不同初值边界 |
 
-本页只建立独立学习入口；未完成教材、代码和数值验收。
+本页只建立独立学习入口；[运行记录模板](../optimization-pku-wenzw-unit08-run-log.md)尚未填入实测结果，教材、代码和数值验收均待完成。

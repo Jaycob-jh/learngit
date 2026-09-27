@@ -3567,7 +3567,7 @@ $$
 |---|---|---|
 | labs/18_optimization_composite.py | Unit 06 | ISTA/FISTA/BCD/ADMM on LASSO；已合并 |
 | labs/19_optimization_stochastic_nonsmooth.py | Unit 07 | subgradient/SGD/SVRG 与标量半光滑 Newton；新增部分未运行 |
-| labs/20_optimization_manifold.py | Unit 08 | sphere Riemannian gradient；新写未运行，Stiefel 数值例待补 |
+| labs/20_optimization_manifold.py | Unit 08 | sphere/Stiefel Riemannian gradient 与 QR retraction；新增部分未运行 |
 | labs/21_optimization_sparse_recovery.py | Unit 09 A | ISTA/FISTA 稀疏重建；新写未运行 |
 | labs/22_optimization_logistic.py | Unit 09 B | 全梯度/SGD 二分类；新写未运行 |
 | labs/23_optimization_phase_retrieval.py | Unit 09 C | 谱/随机初始化的非凸相位恢复；新写未运行 |
@@ -3657,7 +3657,7 @@ Unit 10。只形式化已经理解并能纸笔证明的内容。
 
 1. **Unit 06**：草稿已合并，来源逐页复核待完成；
 2. **Unit 07**：页面及次梯度/SGD/SVRG 脚本已写，标量半光滑 Newton 例已补；新例运行与来源逐页核对待完成；
-3. **Unit 08**：流形几何页面与球面教学脚本已写；来源与运行待完成；
+3. **Unit 08**：流形几何页面及球面/Stiefel 教学脚本已写；来源逐页核对与运行待完成；
 4. **Unit 09**：三个项目脚本已写；来源、运行记录与失败案例实测待完成；
 5. **Unit 10**：学习页已写；Lean 命题与机器编译待完成。
 

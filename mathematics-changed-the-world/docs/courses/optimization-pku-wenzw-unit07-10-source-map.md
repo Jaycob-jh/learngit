@@ -6,7 +6,7 @@
 |---|---|---|---|
 | [次梯度](optimization-pku-wenzw-lectures.md)、[次梯度算法](optimization-pku-wenzw-lectures.md)，教材第二版 6.3 | 仅有既有目录和索引；本批未逐页阅读 | [Unit 07](optimization-pku-wenzw-study-units/07-stochastic-nonsmooth.md)、`labs/19_optimization_stochastic_nonsmooth.py` | 具体 PDF 页码、步长条件、定理适用范围；运行输出 |
 | [随机优化、半光滑 Newton](optimization-pku-wenzw-lectures.md)，教材第二版 8.7–8.8 | 仅有既有目录和索引；本批未逐页阅读 | Unit 07；脚本包含随机优化比较和独立构造的标量半光滑 Newton 例 | 有限和抽样假设、方差减小速度前提、讲义中广义 Jacobian 与局部正则性；新例尚未运行 |
-| 教材第二版 7.4 流形约束优化；[ARNT](https://github.com/optsuite/ARNT)、[OptM](https://github.com/optsuite/OptM) | 章节与仓库入口已由既有资源页登记；本批未读正文/代码 | [Unit 08](optimization-pku-wenzw-study-units/08-manifold.md)、`labs/20_optimization_manifold.py` | 度量和 retraction 约定、数值结果、代码版本；独立 PDF 仍未发现 |
+| 教材第二版 7.4 流形约束优化；[ARNT](https://github.com/optsuite/ARNT)、[OptM](https://github.com/optsuite/OptM) | 章节与仓库入口已由既有资源页登记；本批未读正文/代码 | [Unit 08](optimization-pku-wenzw-study-units/08-manifold.md)、`labs/20_optimization_manifold.py` 的球面和 Stiefel 例 | 度量、QR retraction 约定、数值结果、代码版本；独立 PDF 仍未发现 |
 | 课程的压缩感知、LASSO、近端优化入口 | 仅有既有课程页/单元；本批未逐页阅读新来源 | [Unit 09 项目 A](optimization-pku-wenzw-study-units/09-applications.md)、`labs/21_optimization_sparse_recovery.py` | 来源页码、数据与噪声设定、重建和失败输出 |
 | 课程的 logistic regression、有限和/随机优化入口 | 同上 | Unit 09 项目 B、`labs/22_optimization_logistic.py` | 模型与梯度约定、数据划分、实际泛化与失败输出 |
 | 课程的相位恢复、非凸优化入口 | 同上 | Unit 09 项目 C、`labs/23_optimization_phase_retrieval.py` | 来源公式、初始化条件、符号不变误差与失败输出 |
