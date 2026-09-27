@@ -1,0 +1,250 @@
+{
+  "created_utc": "2026-09-27T15:03:01.454396+00:00",
+  "repo_commit_at_run": "bda2dbb6c2d15238234df2b9dbe72d6dc7bad69e",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "runs": [
+    {
+      "label": "A-baseline",
+      "command_from_repo_root": [
+        "python",
+        "labs/21_optimization_sparse_recovery.py",
+        "--seed",
+        "20260927",
+        "--iterations",
+        "250",
+        "--csv",
+        "A-baseline.csv"
+      ],
+      "script_sha256_at_run": "28f20869d458e325db52a5ef0f01d255c6d471b3a83771464f778d82a84e6980",
+      "csv_sha256": "6604bb6b6ada626f9a0ffc18ccd82333aab81bc988b22b4ab127e86a1889815b",
+      "exit_code": 0,
+      "row_count": 500,
+      "final_rows": {
+        "ISTA": {
+          "method": "ISTA",
+          "iteration": "250",
+          "objective": "0.010829840173466502",
+          "prox_mapping_norm": "2.586877315355913e-14",
+          "relative_recovery_error": "0.11611166445778719",
+          "support_symmetric_difference": "0",
+          "seconds": "0.013083800091408193",
+          "stress": "False",
+          "lambda_value": "0.002"
+        },
+        "FISTA": {
+          "method": "FISTA",
+          "iteration": "250",
+          "objective": "0.010829840173466502",
+          "prox_mapping_norm": "3.1904890897962832e-12",
+          "relative_recovery_error": "0.11611166446659105",
+          "support_symmetric_difference": "0",
+          "seconds": "0.013788799988105893",
+          "stress": "False",
+          "lambda_value": "0.002"
+        }
+      }
+    },
+    {
+      "label": "A-stress",
+      "command_from_repo_root": [
+        "python",
+        "labs/21_optimization_sparse_recovery.py",
+        "--seed",
+        "20260927",
+        "--iterations",
+        "250",
+        "--csv",
+        "A-stress.csv"
+      ],
+      "script_sha256_at_run": "28f20869d458e325db52a5ef0f01d255c6d471b3a83771464f778d82a84e6980",
+      "csv_sha256": "13d004eb8fb6e7b5c3c7e293e7b56bdecad7ed9b23a36930c2e516e2eb099e3e",
+      "exit_code": 0,
+      "row_count": 500,
+      "final_rows": {
+        "ISTA": {
+          "method": "ISTA",
+          "iteration": "250",
+          "objective": "0.007835619882559564",
+          "prox_mapping_norm": "1.4844575063383877e-06",
+          "relative_recovery_error": "0.6545739342906233",
+          "support_symmetric_difference": "0",
+          "seconds": "0.013029900030232966",
+          "stress": "True",
+          "lambda_value": "0.002"
+        },
+        "FISTA": {
+          "method": "FISTA",
+          "iteration": "250",
+          "objective": "0.00783548110090296",
+          "prox_mapping_norm": "1.3972862998122969e-06",
+          "relative_recovery_error": "0.6923740515431857",
+          "support_symmetric_difference": "0",
+          "seconds": "0.013735399930737913",
+          "stress": "True",
+          "lambda_value": "0.002"
+        }
+      }
+    },
+    {
+      "label": "B-baseline",
+      "command_from_repo_root": [
+        "python",
+        "labs/22_optimization_logistic.py",
+        "--seed",
+        "20260927",
+        "--epochs",
+        "40",
+        "--csv",
+        "B-baseline.csv"
+      ],
+      "script_sha256_at_run": "4162cfbbf192aafcb2f1bfb8bdd6b1b73bb37e0aa912b3a14463d88a93ac4174",
+      "csv_sha256": "91556a32706fdf8ddad9053734e2a51efdbcd7ab52302910cbf9e383d1bcc24d",
+      "exit_code": 0,
+      "row_count": 80,
+      "final_rows": {
+        "full_gradient": {
+          "method": "full_gradient",
+          "epoch": "40",
+          "train_objective": "0.4138427443485287",
+          "test_objective": "0.4091564550172849",
+          "test_accuracy": "0.8416666666666667",
+          "full_gradient_norm": "3.5217896740208395e-06",
+          "sample_gradients_used": "9600",
+          "seconds": "0.004434000002220273",
+          "stress": "False"
+        },
+        "SGD": {
+          "method": "SGD",
+          "epoch": "40",
+          "train_objective": "0.4139417277842683",
+          "test_objective": "0.4090908528217299",
+          "test_accuracy": "0.8416666666666667",
+          "full_gradient_norm": "0.00423690408985059",
+          "sample_gradients_used": "9600",
+          "seconds": "0.08945229998789728",
+          "stress": "False"
+        }
+      }
+    },
+    {
+      "label": "B-stress",
+      "command_from_repo_root": [
+        "python",
+        "labs/22_optimization_logistic.py",
+        "--seed",
+        "20260927",
+        "--epochs",
+        "40",
+        "--csv",
+        "B-stress.csv"
+      ],
+      "script_sha256_at_run": "4162cfbbf192aafcb2f1bfb8bdd6b1b73bb37e0aa912b3a14463d88a93ac4174",
+      "csv_sha256": "c5d0f50752cbfa15911aaf5e876e628bdc9af782b204538dc5c1b1be21cdd7fc",
+      "exit_code": 0,
+      "row_count": 80,
+      "final_rows": {
+        "full_gradient": {
+          "method": "full_gradient",
+          "epoch": "40",
+          "train_objective": "0.6646258336254127",
+          "test_objective": "0.7039471289403504",
+          "test_accuracy": "0.5166666666666667",
+          "full_gradient_norm": "0.3427112192508537",
+          "sample_gradients_used": "9600",
+          "seconds": "0.00440029997844249",
+          "stress": "True"
+        },
+        "SGD": {
+          "method": "SGD",
+          "epoch": "40",
+          "train_objective": "0.6781213934680972",
+          "test_objective": "0.7074114165876766",
+          "test_accuracy": "0.8416666666666667",
+          "full_gradient_norm": "6.239093889095085",
+          "sample_gradients_used": "9600",
+          "seconds": "0.08927539992146194",
+          "stress": "True"
+        }
+      }
+    },
+    {
+      "label": "C-baseline",
+      "command_from_repo_root": [
+        "python",
+        "labs/23_optimization_phase_retrieval.py",
+        "--seed",
+        "20260927",
+        "--iterations",
+        "250",
+        "--csv",
+        "C-baseline.csv"
+      ],
+      "script_sha256_at_run": "d02e14b9ec549cbff6e2f76b23cb4f0a146adba6a58733b89981670399ae600b",
+      "csv_sha256": "6c31bb9b2686339d43aa9cb3bdfde4ffd57d05db96b15a2900074fc141b1e41f",
+      "exit_code": 0,
+      "row_count": 502,
+      "final_rows": {
+        "spectral": {
+          "start": "spectral",
+          "iteration": "250",
+          "objective": "9.865470751218422e-05",
+          "gradient_norm": "1.0560566796285497e-09",
+          "sign_invariant_error": "0.002157796585466876",
+          "observation_rmse": "0.01986501522900843",
+          "seconds": "0.024254199932329357",
+          "stress": "False"
+        },
+        "random": {
+          "start": "random",
+          "iteration": "250",
+          "objective": "9.86547075121838e-05",
+          "gradient_norm": "5.931988194162405e-10",
+          "sign_invariant_error": "0.0021577965005052254",
+          "observation_rmse": "0.01986501522900839",
+          "seconds": "0.01902949996292591",
+          "stress": "False"
+        }
+      }
+    },
+    {
+      "label": "C-stress",
+      "command_from_repo_root": [
+        "python",
+        "labs/23_optimization_phase_retrieval.py",
+        "--seed",
+        "20260927",
+        "--iterations",
+        "250",
+        "--csv",
+        "C-stress.csv"
+      ],
+      "script_sha256_at_run": "d02e14b9ec549cbff6e2f76b23cb4f0a146adba6a58733b89981670399ae600b",
+      "csv_sha256": "7887ae24258d85985ad7dc498e6579a014e526c854275a3de5db72bfecd4be4d",
+      "exit_code": 0,
+      "row_count": 502,
+      "final_rows": {
+        "spectral": {
+          "start": "spectral",
+          "iteration": "250",
+          "objective": "0.06756672094888817",
+          "gradient_norm": "0.011737626844889146",
+          "sign_invariant_error": "1.0479254535256692",
+          "observation_rmse": "0.5198719878927434",
+          "seconds": "0.011468400014564395",
+          "stress": "True"
+        },
+        "random": {
+          "start": "random",
+          "iteration": "250",
+          "objective": "0.055343298614268295",
+          "gradient_norm": "0.0025002984100970806",
+          "sign_invariant_error": "1.0752852367315933",
+          "observation_rmse": "0.4705031290619364",
+          "seconds": "0.011228299932554364",
+          "stress": "True"
+        }
+      }
+    }
+  ]
+}

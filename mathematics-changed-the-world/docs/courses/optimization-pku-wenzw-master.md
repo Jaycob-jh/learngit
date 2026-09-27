@@ -13,7 +13,7 @@
 
 ## 1. 文档定位与证据规则
 
-这是一份**单文件总览**：把 Unit 01–06、Unit 07–10 的待审实施稿、电子讲义索引、教材/课程/代码/形式化资源、实验、验收标准和维护规则放在同一份 Markdown 中。Unit 07–10 的独立页面已建立；新脚本未运行，来源未逐页核对。
+这是一份**单文件总览**：把 Unit 01–06、Unit 07–10 的独立页面、电子讲义索引、教材/课程/代码/形式化资源、实验、验收标准和维护规则放在同一份 Markdown 中。Unit 09 三个项目已有来源页码和单一种子的基线/压力运行；Unit 07–08 新脚本与其他来源仍待核验。
 
 ### 1.1 当前权威来源
 
@@ -138,14 +138,14 @@ ARNT / OptM 目前只作为流形优化代码证据；不能据此推出独立�
 | Unit 06 | 复合优化：proximal、加速、分裂 | **草稿待审** | 19–25 | 第 8.1–8.6 | labs/18_optimization_composite.py | 038205cdb91b20fa8e3a7cb9e611a24ee40f4c0a |
 | Unit 07 | 随机与非光滑高级算法 | **页面/脚本待审，未运行** | 10–11、26–27 | 第 6.3、8.7–8.8 | [独立页](optimization-pku-wenzw-study-units/07-stochastic-nonsmooth.md)、labs/19_optimization_stochastic_nonsmooth.py | 本批待提交 |
 | Unit 08 | 流形约束优化 | **页面/脚本待审，未运行** | 当前无单列流形 PDF | 第 7.4 | [独立页](optimization-pku-wenzw-study-units/08-manifold.md)、labs/20_optimization_manifold.py | 本批待提交 |
-| Unit 09 | 应用专题 | **三项目实施稿，未运行** | 跨讲义 | 第 3–4 章 + 算法章节 | [独立页](optimization-pku-wenzw-study-units/09-applications.md)、labs/21–23 | 本批待提交 |
+| Unit 09 | 应用专题 | **三项目已有来源页码、固定种子实测** | 教材第二版 §3.2.3、§3.3、§3.6、§8.1–8.2、§8.7 | 书页 90–102、384、394、498、505 | [独立页](optimization-pku-wenzw-study-units/09-applications.md)、[运行记录](optimization-pku-wenzw-unit09-run-log.md)、labs/21–23 | 单次合成数据；跨种子与真实数据待验证 |
 | Unit 10 | Lean4 形式化验证 | **学习页待审，未编译** | Optlib/ReasLab/ReasBook | 跨章节 | [独立页](optimization-pku-wenzw-study-units/10-formalization.md) | 本批待提交 |
 
 ### 3.1 当前总体进度
 
 - **Unit 01–05：已落库文档 + 配套 Python 实验。**
 - **Unit 06：独立文档与实验已合并；来源复核仍待完成。**
-- **Unit 07–10：独立页面已写；Unit 07–09 的五个脚本尚未运行，Unit 10 尚无已编译证明。**
+- **Unit 07–10：独立页面已写；Unit 07–08 两个新脚本尚未运行，Unit 09 三个项目已有固定种子实测，Unit 10 尚无已编译证明。**
 - 已登记电子讲义：**27 个主题 / 33 个 PDF URL**。
 - 第二版新增半光滑 Newton：已有独立讲义。
 - 第二版新增流形约束优化：教材章节已确认，但当前讲义索引**尚无独立 PDF**。
@@ -3439,7 +3439,7 @@ $$
 
 ### Unit 09｜应用专题：至少三个端到端项目
 
-**状态：三个独立项目实施稿及脚本已写，未运行；本节为原施工规格。**
+**状态：三个独立项目已有来源页码和单一种子实测；本节保留原施工规格，实际证据以[项目页](optimization-pku-wenzw-study-units/09-applications.md)及[运行记录](optimization-pku-wenzw-unit09-run-log.md)为准。**
 
 统一链条：
 
@@ -3568,9 +3568,9 @@ $$
 | labs/18_optimization_composite.py | Unit 06 | ISTA/FISTA/BCD/ADMM on LASSO；已合并 |
 | labs/19_optimization_stochastic_nonsmooth.py | Unit 07 | subgradient/SGD/SVRG 与标量半光滑 Newton；新增部分未运行 |
 | labs/20_optimization_manifold.py | Unit 08 | sphere/Stiefel Riemannian gradient 与 QR retraction；新增部分未运行 |
-| labs/21_optimization_sparse_recovery.py | Unit 09 A | ISTA/FISTA 稀疏重建；新写未运行 |
-| labs/22_optimization_logistic.py | Unit 09 B | 全梯度/SGD 二分类；新写未运行 |
-| labs/23_optimization_phase_retrieval.py | Unit 09 C | 谱/随机初始化的非凸相位恢复；新写未运行 |
+| labs/21_optimization_sparse_recovery.py | Unit 09 A | ISTA/FISTA 稀疏重建；固定种子基线与近共线压力已运行 |
+| labs/22_optimization_logistic.py | Unit 09 B | 全梯度/SGD 二分类；固定种子基线与尺度压力已运行 |
+| labs/23_optimization_phase_retrieval.py | Unit 09 C | 谱/随机初始化的非凸相位恢复；固定种子基线与采样/噪声压力已运行 |
 | Lean4 证明目录 | Unit 10 | 尚未建立、尚未编译 |
 
 > 表中 Unit 07–09 的脚本已写入但未执行；任何预设失败均待实测。Unit 10 仍无机器证明。
@@ -3658,7 +3658,7 @@ Unit 10。只形式化已经理解并能纸笔证明的内容。
 1. **Unit 06**：草稿已合并，来源逐页复核待完成；
 2. **Unit 07**：页面及次梯度/SGD/SVRG 脚本已写，标量半光滑 Newton 例已补；新例运行与来源逐页核对待完成；
 3. **Unit 08**：流形几何页面及球面/Stiefel 教学脚本已写；来源逐页核对与运行待完成；
-4. **Unit 09**：三个项目脚本已写；来源、运行记录与失败案例实测待完成；
+4. **Unit 09**：三个项目已记录来源页码、原始 CSV 和实测失败案例；后续可扩展多种子及真实数据验证；
 5. **Unit 10**：学习页已写；Lean 命题与机器编译待完成。
 
 Unit 06 草稿承接 Unit 02 的 LASSO/composite modeling、Unit 03 的 subgradient optimality 和 Unit 05 的 augmented Lagrangian/variable splitting，仍需按来源复核。

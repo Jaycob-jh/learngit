@@ -34,7 +34,7 @@ pip install -r requirements-labs.txt
 17. \`17_optimization_constrained.py\`：比较二次罚函数与 ALM，并沿 LP 原始–对偶中心路径观察可行性、互补性与 duality gap。
 18. \`18_optimization_composite.py\`：同一 LASSO 比较 ISTA、FISTA、循环坐标下降与 ADMM，记录目标值、proximal gradient mapping 及 ADMM 分裂残差。
 
-## Unit 07–09 待审脚本（本批未运行）
+## Unit 07–09 新脚本
 
 19. \`19_optimization_stochastic_nonsmooth.py\`：次梯度/近端梯度、全梯度/SGD/SVRG，以及标量半光滑 Newton 与奇异导数停止例。
 20. \`20_optimization_manifold.py\`：球面与 Stiefel Rayleigh quotient 的 Riemannian gradient、retraction 和非最优驻点教学例。
@@ -42,7 +42,7 @@ pip install -r requirements-labs.txt
 22. \`22_optimization_logistic.py\`：Unit 09 项目 B，logistic 分类的全梯度/SGD。
 23. \`23_optimization_phase_retrieval.py\`：Unit 09 项目 C，谱初始化/随机初始化的非凸相位恢复。
 
-这五个脚本仅完成编写并推送；尚无本批运行、数值检查或失败输出。[Unit 09 记录模板](../docs/courses/optimization-pku-wenzw-unit09-run-log.md)保留运行证据的空位。
+Unit 07–08 的脚本 19–20 尚未运行。Unit 09 的脚本 21–23 已在固定种子下完成基线和压力运行；[实际运行记录](../docs/courses/optimization-pku-wenzw-unit09-run-log.md)与[原始 CSV](records/unit09/README.md)包含来源页码、命令和失败案例。单次合成数据观察不代表跨种子或真实数据验收。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
 

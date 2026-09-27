@@ -65,7 +65,7 @@
 
 见 [labs/README.md](labs/README.md)。
 
-既有内容包括九个核心专题实验，以及 Kalman、小波、attention 和 Unit 01–06 最优化实验。Unit 07–09 新增的五个脚本尚未运行。例如：
+既有内容包括九个核心专题实验，以及 Kalman、小波、attention 和 Unit 01–06 最优化实验。Unit 07–08 的两个新脚本尚未运行；Unit 09 的三个脚本已完成单一种子的基线和压力运行，详见[原始记录](labs/records/unit09/README.md)。例如：
 
 - 微积分累积函数；
 - Taylor 动画；

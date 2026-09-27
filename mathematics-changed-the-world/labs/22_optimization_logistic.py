@@ -1,4 +1,4 @@
-"""Unit 09 B: synthetic logistic classification; unrun draft."""
+"""Unit 09 B: synthetic logistic classification and scale stress example."""
 
 from __future__ import annotations
 

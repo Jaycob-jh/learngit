@@ -1,39 +1,39 @@
 # Unit 09｜三个端到端优化应用
 
-> **状态：模型与脚本草稿，全部未运行。** 依据课程总览登记的压缩感知、相位恢复、logistic regression 应用方向，结合 [Unit 02 建模](02-modeling.md)、[Unit 06 复合优化](06-composite.md)和 [Unit 07 随机优化](07-stochastic-nonsmooth.md)组织。此处的合成数据与失败情形均是实验设计，不是已取得的结果；现有资料尚未逐页审读。运行时应按[记录模板](../optimization-pku-wenzw-unit09-run-log.md)保存实际输出。
+> **状态：三个教学合成数据项目已完成单一种子的基线与压力运行。** 本页给出来源页码、模型差异和实测失败案例；[完整运行记录](../optimization-pku-wenzw-unit09-run-log.md)与[原始 CSV](https://github.com/Jaycob-jh/math-atlas/tree/math-changed-world/mathematics-changed-the-world/labs/records/unit09)保留逐步证据。运行成功不等于现实数据验证。
 
-每个项目统一报告：数据产生规则、随机种子、目标函数、算法与基线、停止准则、目标值或最优性残差、重建/分类误差、迭代次数、wall-clock、失败案例及局限。不能只凭目标值判断现实任务质量。
+来源为文再文等《最优化：建模、算法与理论》第二版[官方草稿 PDF](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/opt2.pdf)。下文先列正文印刷页码，再列 PDF 文件页码；两者相差 18 页。
 
 ## A. 稀疏重建：LASSO
 
-**问题。** 从 $m<n$ 的线性观测 $b=Ax^\star+\varepsilon$ 估计稀疏信号。教学脚本生成高斯测量矩阵并归一化列，真实向量只含少量非零位置。模型为
+**来源。** §3.2.3，书页 90–92／PDF 108–110；近端梯度 §8.1.2，384／402；FISTA §8.2，394／412。
+
+教学脚本从 $m<n$ 的线性观测 $b=Ax^\star+\varepsilon$ 估计稀疏信号，使用高斯合成测量矩阵、列归一化和固定种子。目标是
 
 $$\min_x \frac{1}{2m}\|Ax-b\|_2^2+\lambda\|x\|_1.$$
 
-数据项对应平方噪声假设，$\ell_1$ 是稀疏结构的凸松弛。比较 ISTA 与 FISTA，并记录目标值、proximal gradient mapping、相对重建误差及支持集误差。若噪声分布显著偏离平方损失假设或列高度相关，支持集可能不稳定；脚本通过提高列相关性设计失败条件，但实际结果待运行。代码：[项目 A](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/21_optimization_sparse_recovery.py)。
+书中的平方损失未除以 $m$；本实验的 $\lambda=0.002$ 不能脱离损失缩放直接和书中参数比较。比较 ISTA 与 FISTA，固定 250 步。基线两法相对恢复误差均约 0.116，支持集差异为 0，proximal gradient mapping 约为 $10^{-14}$–$10^{-12}$。压力条件只使第二列近乎第一列，保留同一原始观测噪声；两法误差升至 0.655、0.692，支持集差异仍为 0。这说明支持集正确和最优性残差小均不足以保证系数幅值恢复。早期 $\lambda=0.015$ 探索的基线误差约 0.779，也记录了模型参数选择失败。代码：[项目 A](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/21_optimization_sparse_recovery.py)。
 
 ## B. 二值分类：正则化 logistic regression
 
-**问题。** 在合成二分类数据上比较全批量梯度法与 SGD。令标签 $y_i\in\{-1,1\}$，截距不正则化，模型为
+**来源。** §3.3，书页 93–94／PDF 111–112；SGD §8.7.1，498／516；应用 §8.7.2，505／523。
+
+脚本在合成二分类数据上比较全批量梯度法与 SGD。标签 $y_i\in\{-1,1\}$，目标为
 
 $$\min_{w,c}\;\frac1N\sum_{i=1}^N\log(1+e^{-y_i(x_i^Tw+c)})+\frac\lambda2\|w\|_2^2.$$
 
-该目标在参数上凸；有正则项不代表截距方向也强凸。报告训练/测试损失、准确率及目标进展，保留固定划分与随机种子。两种算法必须在相同数据上比较；SGD 的每步成本小但噪声大，不能仅看迭代轮数。失败条件设计为特征尺度失衡并保持未标准化；需在运行后检查其影响，不能预先声称失败已发生。代码：[项目 B](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/22_optimization_logistic.py)。
+脚本采用平均损失、额外的不正则化截距，和教材模型的求和及参数约定有别。固定划分、种子及 40 epoch 后，基线测试准确率两法均为 0.842。压力条件将一列特征乘以 100：全梯度准确率降至 0.517；SGD 仍为 0.842，但测试损失约 0.707、全梯度范数约 6.24，不可视为已收敛。放大特征既改变优化几何，也改变固定 $\ell_2$ 正则项在原始特征尺度上的相对作用，因此不能仅归因于条件数。代码：[项目 B](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/22_optimization_logistic.py)。
 
 ## C. 相位恢复：幅值平方观测
 
-**问题。** 给定 $b_i=(a_i^Tx^\star)^2+\varepsilon_i$，在不观测符号的条件下恢复 $x^\star$。使用
+**来源。** §3.6，书页 100–102／PDF 118–120；实数模型见式 (3.6.4)，书页 102／PDF 120。谱初始化仅借鉴 [Candès 等的原始论文](https://arxiv.org/abs/1407.1065)思路，本脚本并非该论文理论算法的复现。
+
+脚本在实数高斯测量下生成 $b_i=(a_i^Tx^\star)^2+\varepsilon_i$，优化
 
 $$\min_x\;\frac{1}{4m}\sum_i\bigl((a_i^Tx)^2-b_i\bigr)^2.$$
 
-这是**非凸**模型；$x^\star$ 与 $-x^\star$ 无法由这种观测区分，因此误差按符号等价类计算。比较谱初始化后的梯度下降与随机初始化后的同一算法；两者使用同一目标、梯度和步长，比较的是初始化。记录观测残差、符号不变恢复误差与目标。失败案例为样本不足或高噪声下的随机初始化，实际表现须运行后记录。代码：[项目 C](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/23_optimization_phase_retrieval.py)。
+教材式 (3.6.4) 使用无噪声强度 $b_i^2$；脚本在**平方观测值**上加高斯噪声，并另行缩放目标。比较谱初始化和随机初始化后的同一回溯梯度下降。由于 $x^\star$ 与 $-x^\star$ 不可区分，报告符号不变误差。基线 250 步后两者均约 0.00216。压力条件同时将样本数 240 降至 24、噪声标准差 0.02 升至 0.3；谱/随机误差分别为 1.048/1.075，均未恢复真值。随机初始化的目标值反而更低（0.0553 对 0.0676），表明目标值和真值误差不可混同；这次联合压力不能分离欠采样与噪声的贡献。代码：[项目 C](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/23_optimization_phase_retrieval.py)。
 
-## 资料与断言边界
+## 证据范围
 
-| 项目 | 当前参考逻辑 | 待阅读与验证 |
-|---|---|---|
-| A | 课程的稀疏恢复/复合优化目录；Unit 02、06 的 LASSO 推导 | 教材具体章节/页码；两算法与失败条件的真实输出 |
-| B | 课程的 logistic regression 与随机优化目录；Unit 07 的有限和模型 | 教材/讲义的模型约定；特征尺度、停止准则与泛化结果 |
-| C | 课程的相位恢复应用目录与非凸最优性框架 | 来源公式与噪声假设；初始化策略、局部极值及恢复误差 |
-
-三个脚本与本页是**可供审阅的实施稿**。只有实际运行并填写日志后，才可称为完成端到端实验；不得把合成数据实验推广为真实应用效果。
+六次运行均使用种子 20260927，Python 3.12.14、NumPy 2.3.5，退出码均为 0。原始 CSV、命令、脚本与 CSV 哈希以及逐方法末行见[运行记录](../optimization-pku-wenzw-unit09-run-log.md)。这些是单一种子、固定预算的合成数据观察；尚无跨种子不确定性估计或真实数据外部验证。
