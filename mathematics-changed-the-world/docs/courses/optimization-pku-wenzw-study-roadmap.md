@@ -91,6 +91,10 @@ $$
 
 目标：理解 prox、变量分裂和原始—对偶结构如何把复合问题转化为可计算步骤。
 
+进入：[Unit 06 学习单元](optimization-pku-wenzw-study-units/06-composite.md)
+
+实验：`labs/18_optimization_composite.py`，在同一 LASSO 上比较 ISTA、FISTA、坐标下降与 ADMM，并记录最优性及分裂残差。
+
 ## Unit 07｜随机与非光滑高级算法
 
 **资源**：随机优化、半光滑 Newton、第二版相关章节。

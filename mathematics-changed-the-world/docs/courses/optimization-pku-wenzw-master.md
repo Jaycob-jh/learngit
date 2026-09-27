@@ -13,7 +13,7 @@
 
 ## 1. 文档定位与证据规则
 
-这是一份**单文件总览**：把当前已经完成的 Unit 01–05、尚未完成的 Unit 06–10、电子讲义索引、教材/课程/代码/形式化资源、实验、验收标准和维护规则放在同一份 Markdown 中。
+这是一份**单文件总览**：把当前已经完成的 Unit 01–06、尚未完成的 Unit 07–10、电子讲义索引、教材/课程/代码/形式化资源、实验、验收标准和维护规则放在同一份 Markdown 中。
 
 ### 1.1 当前权威来源
 
@@ -135,7 +135,7 @@ ARNT / OptM 目前只作为流形优化代码证据；不能据此推出独立�
 | Unit 03 | 最优性理论 | **已完成** | 07–08 | 第 5 章 | labs/15_optimization_optimality.py | 2c09b114734d544aba3fa08509dc7b0bf49f1155 |
 | Unit 04 | 无约束优化算法 | **已完成** | 09、12–15 | 第 6 章（6.3 延后） | labs/16_optimization_unconstrained.py | 209314c601e162979ebe1f724a10e9757e0c8d47 |
 | Unit 05 | 约束优化算法 | **已完成** | 16–18 | 第 7.1–7.3 | labs/17_optimization_constrained.py | bde35947006ea65ce2902830318624ae24869e6d |
-| Unit 06 | 复合优化：proximal、加速、分裂 | **待完成** | 19–25 | 第 8.1–8.6 | 规划：labs/18_optimization_composite.py | — |
+| Unit 06 | 复合优化：proximal、加速、分裂 | **已完成** | 19–25 | 第 8.1–8.6 | labs/18_optimization_composite.py | 见 Unit 06 独立页与本分支提交 |
 | Unit 07 | 随机与非光滑高级算法 | **待完成** | 10–11、26–27 | 第 6.3、8.7–8.8 | 规划：labs/19_optimization_stochastic_nonsmooth.py | — |
 | Unit 08 | 流形约束优化 | **待完成** | 当前无单列流形 PDF | 第 7.4 | 规划：labs/20_optimization_manifold.py | — |
 | Unit 09 | 应用专题 | **待完成** | 跨讲义 | 第 3–4 章 + 算法章节 | 规划：3 个端到端项目 | — |
@@ -143,8 +143,8 @@ ARNT / OptM 目前只作为流形优化代码证据；不能据此推出独立�
 
 ### 3.1 当前总体进度
 
-- **Unit 01–05：已落地文档 + 配套 Python 实验。**
-- **Unit 06–10：待完成，施工范围已经明确。**
+- **Unit 01–06：已落地文档 + 配套 Python 实验。**
+- **Unit 07–10：待完成，施工范围已经明确。**
 - 已登记电子讲义：**27 个主题 / 33 个 PDF URL**。
 - 第二版新增半光滑 Newton：已有独立讲义。
 - 第二版新增流形约束优化：教材章节已确认，但当前讲义索引**尚无独立 PDF**。
@@ -3068,13 +3068,13 @@ $$
 下一单元：[Unit 06｜复合优化：proximal、加速与分裂](../optimization-pku-wenzw-study-roadmap.md#unit-06复合优化proximal加速分裂)
 
 
-## 6. 待完成单元：详细施工计划
+## 6. Unit 06 已落地；Unit 07–10 施工计划
 
-> 本节是**规划**，不是已完成内容。文件名、实验名是建议落地路径；在真正创建前不视为仓库既有事实。
+> Unit 06 的详细成品见[独立学习页](optimization-pku-wenzw-study-units/06-composite.md)及 `labs/18_optimization_composite.py`。本节原有 Unit 06 条目保留为施工规格；Unit 07–10 仍是规划。
 
 ### Unit 06｜复合优化：proximal、加速、分裂
 
-**状态：待完成。**
+**状态：已完成独立学习页与实验；下列条目为原施工规格。**
 
 **直接讲义：**
 
@@ -3230,7 +3230,7 @@ $$
 - primal residual / dual residual 是停止准则的一部分；
 - penalty parameter rho 会影响数值表现，但不能把某个固定经验值写成理论最优。
 
-**建议实验：** labs/18_optimization_composite.py
+**已交付实验：** labs/18_optimization_composite.py
 
 同一个 LASSO 问题比较：
 
@@ -3652,13 +3652,13 @@ Unit 10。只形式化已经理解并能纸笔证明的内容。
 
 ## 11. 后续执行队列
 
-1. **Unit 06**：proximal / FISTA / proximal point / BCD / dual / ADMM；
-2. **Unit 07**：subgradient / SGD / variance reduction / semismooth Newton；
+1. **Unit 06**：proximal / FISTA / proximal point / BCD / dual / ADMM（已完成）；
+2. **Unit 07**：subgradient / SGD / variance reduction / semismooth Newton（下一项）；
 3. **Unit 08**：manifold geometry / Riemannian first- and second-order methods；
 4. **Unit 09**：至少 3 个端到端项目；
 5. **Unit 10**：Lean4 formalization。
 
-其中 **Unit 06 是下一项**，因为它直接承接 Unit 02 的 LASSO/composite modeling、Unit 03 的 subgradient optimality 和 Unit 05 的 augmented Lagrangian/variable splitting。
+Unit 06 已承接 Unit 02 的 LASSO/composite modeling、Unit 03 的 subgradient optimality 和 Unit 05 的 augmented Lagrangian/variable splitting。
 
 ## 12. 文档使用方式
 
@@ -3666,8 +3666,8 @@ Unit 10。只形式化已经理解并能纸笔证明的内容。
 
 需要深入时再回到独立 Unit：
 
-- Unit 01–05：当前独立文档是已完成版本；
-- Unit 06–10：本文件中的内容是施工规格，落地后再拆成独立 Unit 文档；
+- Unit 01–06：当前独立文档是已完成版本；
+- Unit 07–10：本文件中的内容是施工规格，落地后再拆成独立 Unit 文档；
 - lecture index：本文件保留完整资源表，原索引页继续作为自动维护的机器友好清单。
 
 本文件的目标不是取代独立教学页面，而是提供一个**单一事实入口**：一眼看清资源、进度、已完成内容、待完成范围、实验与验收标准。
