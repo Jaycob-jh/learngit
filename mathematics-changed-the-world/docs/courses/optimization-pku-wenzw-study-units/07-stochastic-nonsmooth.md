@@ -33,9 +33,19 @@ $$v_k=\nabla f_{i_k}(x_k)-\nabla f_{i_k}(\tilde x)+\mu.$$
 
 对局部 Lipschitz 的映射 $H$，可从广义 Jacobian 中选取 $V_k$，求解 $V_kd_k=-H(x_k)$ 并更新 $x_{k+1}=x_k+d_k$。典型例子是互补或 proximal 最优性方程；$\max(0,x)$ 的广义导数在零点是一个集合。所选矩阵可解、解附近半光滑和适当非奇异性是局部快收敛论证的关键。初值远离解时还需 merit function、线搜索或信赖域等全局化机制。本页不宣称这些条件已经对具体应用证明。
 
+**可手推的标量例子。** 取 $f(x)=\tfrac12(2x-1)^2$、$h(x)=0.3|x|$、$t=0.1$，将复合最优性写成 fixed-point 方程
+
+$$H(x)=x-\operatorname{prox}_{th}\bigl(x-tf'(x)\bigr)=x-S_{0.03}(0.6x+0.2)=0.$$
+
+$S_\tau$ 为 soft threshold。这个 $H$ 是分段仿射的；在 $|0.6x+0.2|>0.03$ 的活动区，广义导数可取 $0.4$，在非活动区取 $1$，在折点可取 $[0.4,1]$ 中的元素。最优点 $x^*=0.425$ 可由正半轴上的一阶条件 $4x-2+0.3=0$ 直接核对。实验从 $x_0=-1$ 对照普通 proximal fixed-point 迭代与 $x_{k+1}=x_k-H(x_k)/V_k$；这里只展示一个低维、分段仿射情形，不能推出一般半光滑 Newton 的速度。
+
+另设不同方程 $Q(x)=\max(x,0)-1$。从 $x_0=-1$ 出发，$Q(x_0)=-1$ 而该点的导数为零，Newton 线性方程无法求解。这说明非奇异性前提的作用；它不是上述 LASSO 方程的失败结果。
+
 ## 2. 教学实验设计与失败案例
 
-[实验脚本](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/19_optimization_stochastic_nonsmooth.py)设计两组对照：LASSO 次梯度与近端梯度；有限和 logistic 损失的全梯度、SGD 与 snapshot 方差减小。脚本已编写但**本批未运行**，没有数值结果可报告。
+[实验脚本](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/19_optimization_stochastic_nonsmooth.py)包含三组：LASSO 次梯度与近端梯度；有限和 logistic 损失的全梯度、SGD 与 snapshot 方差减小；上述标量方程的 proximal fixed-point 与半光滑 Newton 对照，以及奇异导数停止例。新增部分尚未运行，没有数值结果可报告。
+
+[运行记录模板](../optimization-pku-wenzw-unit07-run-log.md)预留环境、逐步残差、停止行为和来源页码；当前只有解析基准，尚无实测输出。
 
 预设失败情形：固定较大学习率的 SGD 可能在最优点附近持续波动；高方差或未标准化特征可能放大该现象。实际表现需以运行记录为准，不能把预设失败写成已观察结果。
 
@@ -45,6 +55,6 @@ $$v_k=\nabla f_{i_k}(x_k)-\nabla f_{i_k}(\tilde x)+\mu.$$
 |---|---|
 | 次梯度定义、步长前提 | 主题 10–11；教材 6.3 | 逐页核对符号、定理前提与结论 |
 | SGD、mini-batch、方差减小 | 主题 26；教材 8.7 | 区分凸、强凸、非凸结论 |
-| 半光滑与广义 Jacobian | 主题 27；教材 8.8 | 核对局部正则性与全局化条件 |
+| 半光滑与广义 Jacobian | 主题 27；教材 8.8；本页标量例子为独立教学构造 | 核对讲义中的定义、局部正则性与全局化条件；运行并保存脚本原始输出 |
 
 完成本单元的依据应是来源页码、手推、可复跑运行记录与失败说明；目前仅形成待审内容和实验入口。
