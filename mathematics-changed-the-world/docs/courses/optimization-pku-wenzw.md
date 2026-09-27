@@ -233,12 +233,12 @@ Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳�
 - [Unit 06｜复合优化算法](optimization-pku-wenzw-study-units/06-composite.md)
 - [Unit 07｜随机与非光滑优化（待审）](optimization-pku-wenzw-study-units/07-stochastic-nonsmooth.md)
 - [Unit 08｜流形约束优化（待审）](optimization-pku-wenzw-study-units/08-manifold.md)
-- [Unit 09｜三个端到端应用（未运行）](optimization-pku-wenzw-study-units/09-applications.md)
+- [Unit 09｜三个端到端应用（来源与单种子实测）](optimization-pku-wenzw-study-units/09-applications.md)
 - [Unit 10｜Lean4 形式化入口（未编译）](optimization-pku-wenzw-study-units/10-formalization.md)
 - [Unit 07–10 资料映射与待验证项](optimization-pku-wenzw-unit07-10-source-map.md)
 - 配套实验：`labs/13_optimization_convexity.py`、`labs/14_optimization_modeling.py`、`labs/15_optimization_optimality.py`、`labs/16_optimization_unconstrained.py`、`labs/17_optimization_constrained.py`、`labs/18_optimization_composite.py`
 
-Unit 07–09 新写的 `labs/19_optimization_stochastic_nonsmooth.py` 至 `labs/23_optimization_phase_retrieval.py` **尚未运行**；Unit 09 的失败案例只有预设条件，没有观测结果。
+Unit 07–08 的 `labs/19_optimization_stochastic_nonsmooth.py` 与 `labs/20_optimization_manifold.py` 尚未运行。Unit 09 的 `labs/21_optimization_sparse_recovery.py` 至 `labs/23_optimization_phase_retrieval.py` 已完成单一种子的基线和压力运行；[运行记录](optimization-pku-wenzw-unit09-run-log.md)保留实测失败案例，不能推广为真实数据效果。
 
 学习路线按“问题与基础 → 建模 → 最优性 → 无约束 → 约束 → 复合 → 随机/非光滑 → 流形 → 应用 → 形式化”组织，不要求按照 PDF 文件编号机械阅读。
 

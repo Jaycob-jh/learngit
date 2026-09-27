@@ -1,6 +1,6 @@
 # Unit 07–10｜资料、页面与验证队列
 
-> 2026-09-27 推送批次。按已有 [optbook 讲义索引](optimization-pku-wenzw-lectures.md)、[课程资源页](optimization-pku-wenzw.md)和[学习路线](optimization-pku-wenzw-study-roadmap.md)建立映射。本批遵照 Hai 的安排，不重新核验来源、不执行脚本；“已登记”与“已阅读”严格区分。总库此前的 [120 行覆盖基线](../coverage-matrix.md)仍为当时快照。
+> 2026-09-27 建立初版，随后补入 Unit 09 来源页码与实测证据。按已有 [optbook 讲义索引](optimization-pku-wenzw-lectures.md)、[课程资源页](optimization-pku-wenzw.md)和[学习路线](optimization-pku-wenzw-study-roadmap.md)建立映射；各行分别记录已阅读与待验证状态。总库此前的 [120 行覆盖基线](../coverage-matrix.md)仍为当时快照，不代表全部资料已审读。
 
 | 资料或模型入口 | 已阅读证据 | 对应页面/实验 | 待验证项 |
 |---|---|---|---|
@@ -12,4 +12,4 @@
 | 同 PDF §3.6 相位恢复 | 已核书页 100–102／PDF 118–120，式 (3.6.4)；脚本噪声与目标缩放另定 | [Unit 09 项目 C](optimization-pku-wenzw-study-units/09-applications.md)、同批原始记录 | 欠采样与高噪声联合压力失效；各因素贡献与跨种子稳定性待验证 |
 | [Optlib](https://github.com/optsuite/optlib)、[ReasBook](https://github.com/optpku/ReasBook)、[ReasLab](https://reaslab.io/) | 仅有既有资源登记；本批未读取当前代码 | [Unit 10](optimization-pku-wenzw-study-units/10-formalization.md) | Lean/toolchain 版本、精确导入、编译日志、纸笔与机器命题一致性 |
 
-本批新写页面与脚本的存在只说明可供审阅。项目 A–C 的运行记录在[空白模板](optimization-pku-wenzw-unit09-run-log.md)中保留待填；没有合成“运行成功”或“失败已观察”的记录。
+Unit 07–08 页面与脚本仍待来源和运行核验；Unit 09 项目 A–C 已有[来源页码、实际运行与失败案例](optimization-pku-wenzw-unit09-run-log.md)，但仅覆盖单一种子的合成数据；Unit 10 尚无机器编译证据。
