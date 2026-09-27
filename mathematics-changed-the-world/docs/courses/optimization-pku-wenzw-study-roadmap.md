@@ -120,7 +120,7 @@ $$
 
 从压缩感知、低秩恢复、相位恢复、图像 TV/小波、logistic regression/SVM、随机优化/深度学习、强化学习、最优传输中至少完成三个端到端项目。
 
-进入：[Unit 09 三项目实施稿](optimization-pku-wenzw-study-units/09-applications.md)与[空白运行记录模板](optimization-pku-wenzw-unit09-run-log.md)。三个脚本已写入但未运行，不能将项目标为“已完成”。
+进入：[Unit 09 三项目来源与实测](optimization-pku-wenzw-study-units/09-applications.md)及[运行记录](optimization-pku-wenzw-unit09-run-log.md)。三个合成数据脚本已完成固定种子的基线与压力运行；真实数据与跨种子验证仍待完成。
 
 每个项目必须回答：为什么选这个模型？为什么选这个算法？如果关键假设不满足，会怎样？
 

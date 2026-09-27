@@ -1,4 +1,4 @@
-"""Unit 09 A: synthetic sparse recovery with ISTA and FISTA; unrun draft."""
+"""Unit 09 A: synthetic sparse recovery with ISTA and FISTA."""
 
 from __future__ import annotations
 
@@ -18,22 +18,28 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, default=20260927)
     parser.add_argument("--iterations", type=int, default=250)
+    parser.add_argument("--lambda-value", type=float, default=0.002)
     parser.add_argument("--stress", action="store_true", help="make two columns nearly collinear")
     parser.add_argument("--csv", type=Path, default=Path("unit09-sparse.csv"))
     args = parser.parse_args()
     if args.iterations < 1:
         parser.error("--iterations must be positive")
+    if args.lambda_value < 0:
+        parser.error("--lambda-value must be nonnegative")
 
     rng = np.random.default_rng(args.seed)
     m, n = 48, 96
     a = rng.normal(size=(m, n))
+    noise = 0.03 * rng.normal(size=m)
     if args.stress:
-        a[:, 1] = a[:, 0] + 0.01 * rng.normal(size=m)
+        # A separate stream keeps the observation noise identical across modes.
+        jitter_rng = np.random.default_rng(args.seed + 1)
+        a[:, 1] = a[:, 0] + 0.01 * jitter_rng.normal(size=m)
     a /= np.linalg.norm(a, axis=0, keepdims=True)
     truth = np.zeros(n)
     truth[[0, 1, 7, 18, 46]] = [1.5, -0.8, 1.1, -1.2, 0.9]
-    b = a @ truth + 0.03 * rng.normal(size=m)
-    lam = 0.015
+    b = a @ truth + noise
+    lam = args.lambda_value
     lip = float(np.linalg.norm(a, 2) ** 2 / m)
     step = 1 / lip
 
@@ -65,7 +71,8 @@ def main() -> None:
                          "prox_mapping_norm": float(np.linalg.norm(mapping)),
                          "relative_recovery_error": float(np.linalg.norm(x - truth) / np.linalg.norm(truth)),
                          "support_symmetric_difference": len(predicted ^ actual),
-                         "seconds": time.perf_counter() - started, "stress": args.stress})
+                         "seconds": time.perf_counter() - started, "stress": args.stress,
+                         "lambda_value": lam})
 
     args.csv.parent.mkdir(parents=True, exist_ok=True)
     with args.csv.open("w", encoding="utf-8", newline="") as handle:

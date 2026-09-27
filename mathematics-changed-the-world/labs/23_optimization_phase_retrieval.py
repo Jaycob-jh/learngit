@@ -1,4 +1,4 @@
-"""Unit 09 C: real-valued phase retrieval on synthetic data; unrun draft."""
+"""Unit 09 C: real-valued phase retrieval on synthetic data."""
 
 from __future__ import annotations
 
