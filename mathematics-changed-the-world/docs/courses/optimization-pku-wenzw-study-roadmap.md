@@ -73,7 +73,11 @@
 
 **资源**：罚函数、增广 Lagrangian、线性规划内点法、教材第 7 章。
 
-目标：理解把约束罚进目标、乘子与罚参数联合控制约束违反、从可行域内部沿中心路径逼近边界最优解这三类策略。
+目标：理解把约束罚进目标、乘子与罚参数联合控制约束违反，以及原始–对偶内点法如何沿中心路径逼近 KKT 解；明确 penalty、ALM 与 interior-point 的数值权衡和适用结构。
+
+进入：[Unit 05 学习单元](optimization-pku-wenzw-study-units/05-constrained.md)
+
+实验：`labs/17_optimization_constrained.py`
 
 ## Unit 06｜复合优化：proximal、加速、分裂
 

@@ -547,3 +547,12 @@ Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归
 该单元保留教材的收敛条件边界：Armijo/Wolfe 不是任意下降步长；梯度法在凸光滑问题上为函数值 O(1/k)、强凸条件下 Q-线性；经典 Newton 的 Q-二次速度是局部结论且依赖 Hessian Lipschitz、最优点 Hessian 正定与足够近的初值；BFGS 的全局收敛结论依赖 Wolfe 与函数曲率条件，Q-超线性结论也有额外前提；Gauss-Newton 主要针对小残量问题，不能无条件宣称二次收敛。
 
 新增 `labs/16_optimization_unconstrained.py`：Rosenbrock 实验统一比较 gradient+Armijo、BB+非单调 Armijo、modified Newton+Armijo、BFGS+Armijo 与 trust-region 二次模型；非线性指数拟合实验比较 Gauss-Newton 与 LM 型阻尼更新，并记录梯度/残差范数与迭代次数。实验明确仅用于观察算法机制，不用于给算法做普遍排名。
+
+
+### 2026-09-27｜完成 Unit 05：约束优化算法
+
+新增 `docs/courses/optimization-pku-wenzw-study-units/05-constrained.md`，依据第二版教材第 7 章的 7.1–7.3，把罚函数、增广 Lagrangian、原始–对偶结构和线性规划内点法统一为“约束违反 → 乘子/KKT → 参数化子问题 → 原始–对偶 gap”的学习框架。第二版第 7.4 节流形约束优化保留到 Unit 08 单独展开。
+
+该单元保留教材的重要条件边界：二次罚函数的全局收敛结论要求每个子问题取得全局极小解且罚因子趋于无穷；近似子问题版本还要求一阶残差趋零并在极限点有相应线性无关条件。精确 ℓ1 罚函数的有限罚因子结论以严格局部极小、KKT 和乘子阈值为前提。ALM 的局部精确性依赖 LICQ 与二阶充分条件；凸问题 ALM 的乘子收敛结论以 Slater 和不精确子问题条件为前提。
+
+新增 `labs/17_optimization_constrained.py`：第一部分在等式约束二次问题上比较 quadratic penalty 与 fixed-penalty ALM，显式展示罚函数约束违反下降伴随 Hessian 条件数增长，而 ALM 通过乘子反馈在固定有限罚因子下逼近 KKT 乘子；第二部分求解二维 LP 的扰动原始–对偶 KKT 方程，沿中心路径逐步减小 `tau`，验证 `x^T s = 2 tau`、原始/对偶目标靠拢以及边界最优解的逼近。
