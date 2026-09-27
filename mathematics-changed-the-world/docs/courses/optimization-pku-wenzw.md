@@ -220,6 +220,8 @@ Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳�
 
 资源索引已经具备后，下一阶段转向课程化学习：
 
+- [完整总览：已完成 + 待完成](optimization-pku-wenzw-master.md)
+
 - [系统学习路线](optimization-pku-wenzw-study-roadmap.md)
 - [Unit 01｜最优化的基础语言](optimization-pku-wenzw-study-units/01-foundations.md)
 - [Unit 02｜优化建模与典型优化问题](optimization-pku-wenzw-study-units/02-modeling.md)

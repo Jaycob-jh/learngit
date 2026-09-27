@@ -25,6 +25,7 @@ nav:
   - 知识图谱: knowledge-graph.md
   - 课程体系:
       - 北大最优化体系（文再文）: courses/optimization-pku-wenzw.md
+      - 完整总览（已完成 + 待完成）: courses/optimization-pku-wenzw-master.md
       - optbook 电子讲义索引: courses/optimization-pku-wenzw-lectures.md
       - 系统学习路线: courses/optimization-pku-wenzw-study-roadmap.md
       - 学习单元:
