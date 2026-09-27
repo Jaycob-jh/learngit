@@ -13,6 +13,11 @@
 - 本批按 Hai 要求不运行脚本、不复核 PDF/代码/Lean；预设失败条件仅为实验设计，未产生运行结果。
 - 课程总览、路线与导航同步链接到待审页面；本批提交与 PR 状态见工作区项目 `MANIFEST.md`。
 
+## 2026-09-27：Unit 07 半光滑 Newton 例补充
+
+- 在 Unit 07 页面和 `labs/19_optimization_stochastic_nonsmooth.py` 中加入标量 LASSO proximal fixed-point 方程、广义导数选择、与普通 proximal 迭代对照，以及独立的奇异导数停止例。
+- 公式与例子是教学构造；本批不把它归为讲义原文或已验证的运行结果。
+
 ## 2026-09-19：项目起点
 
 ### 14:29 左右｜从短视频开始

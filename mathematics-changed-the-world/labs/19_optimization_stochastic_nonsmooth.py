@@ -1,7 +1,8 @@
 """Unit 07 teaching experiment; source-level and numerical review pending.
 
-Compares subgradient/proximal gradient on LASSO, then full gradient/SGD/SVRG
-on one finite-sum logistic model. Outputs raw per-iteration metrics as CSV.
+Compares subgradient/proximal gradient on LASSO, full gradient/SGD/SVRG on
+one finite-sum logistic model, and a scalar semismooth Newton residual.
+Outputs raw per-iteration metrics as CSV.
 No result is claimed by this file until it is actually run and inspected.
 """
 
@@ -21,6 +22,22 @@ def soft_threshold(x: np.ndarray, threshold: float) -> np.ndarray:
 
 def sigmoid_neg(z: np.ndarray) -> np.ndarray:
     return np.exp(-np.logaddexp(0.0, z))
+
+
+def scalar_lasso_residual(x: float) -> tuple[float, float, float]:
+    """Proximal fixed-point residual and one Clarke Jacobian selection.
+
+    f(x) = (2x-1)^2/2, h(x) = 0.3|x|, t = 0.1.  The prox argument is
+    v(x)=0.6x+0.2, with threshold t*lambda=0.03.  At |v|=0.03 choose
+    slope 1/2 from the interval [0,1]; elsewhere choose the active slope.
+    """
+    argument = 0.6 * x + 0.2
+    prox = float(soft_threshold(np.array(argument), 0.03))
+    if abs(abs(argument) - 0.03) <= 1e-12:
+        prox_slope = 0.5
+    else:
+        prox_slope = 1.0 if abs(argument) > 0.03 else 0.0
+    return x - prox, 1.0 - 0.6 * prox_slope, prox
 
 
 def main() -> None:
@@ -57,7 +74,8 @@ def main() -> None:
             mapping = lip * (x - soft_threshold(x - (a.T @ (a @ x - b)) / lip, lam / lip))
             rows.append({"problem": "lasso", "method": method, "step": k,
                          "objective": lasso_objective(x), "metric": float(np.linalg.norm(mapping)),
-                         "metric_name": "proximal_gradient_mapping", "seconds": time.perf_counter() - started})
+                         "metric_name": "proximal_gradient_mapping", "seconds": time.perf_counter() - started,
+                         "state": "", "generalized_jacobian": ""})
 
     n, dim = 180, 12
     data = rng.normal(size=(n, dim))
@@ -99,7 +117,35 @@ def main() -> None:
             x -= step * direction
             rows.append({"problem": "logistic", "method": method, "step": k,
                          "objective": logistic_objective(x), "metric": float(np.linalg.norm(full_gradient(x))),
-                         "metric_name": "full_gradient_norm", "seconds": time.perf_counter() - started})
+                         "metric_name": "full_gradient_norm", "seconds": time.perf_counter() - started,
+                         "state": "", "generalized_jacobian": ""})
+
+    # Semismooth Newton solves H(x)=x-prox_{0.03|.|}(x-0.1 f'(x))=0.
+    # This piecewise-affine scalar example is not a speed claim for general SSN.
+    for method in ("scalar_proximal_iteration", "scalar_semismooth_newton"):
+        x = -1.0
+        started = time.perf_counter()
+        for k in range(13):
+            residual, jacobian, prox = scalar_lasso_residual(x)
+            objective = 0.5 * (2.0 * x - 1.0) ** 2 + 0.3 * abs(x)
+            rows.append({"problem": "scalar_lasso_equation", "method": method, "step": k,
+                         "objective": objective, "metric": abs(residual),
+                         "metric_name": "fixed_point_residual", "seconds": time.perf_counter() - started,
+                         "state": x, "generalized_jacobian": jacobian})
+            if k == 12 or abs(residual) <= 1e-12:
+                break
+            if method == "scalar_proximal_iteration":
+                x = prox
+            else:
+                x -= residual / jacobian
+
+    # A separate root equation demonstrates a genuine singular-Jacobian stop:
+    # H(x)=max(x,0)-1 has root x=1, but at x=-1 its selected derivative is 0.
+    bad_x = -1.0
+    rows.append({"problem": "max_equation", "method": "singular_jacobian_no_step", "step": 0,
+                 "objective": "", "metric": abs(max(bad_x, 0.0) - 1.0),
+                 "metric_name": "root_residual", "seconds": 0.0,
+                 "state": bad_x, "generalized_jacobian": 0.0})
 
     args.csv.parent.mkdir(parents=True, exist_ok=True)
     with args.csv.open("w", encoding="utf-8", newline="") as handle:
