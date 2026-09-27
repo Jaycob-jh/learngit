@@ -24,7 +24,7 @@
 | 10 | 次梯度 | 朱桢源 | [09-lect-sg.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/09-lect-sg.pdf) |
 | 11 | 次梯度算法 | 朱桢源 | [10-lect-sgm.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/10-lect-sgm.pdf) · [次梯度+算法合并版](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/09-lect-sg-meth.pdf) |
 | 12 | 牛顿类算法 | 陈乐恒、丁思哲 | [11-lect-newton.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/11-lect-newton.pdf) |
-| 13 | 信赖域算法 | 邓展望 | [13_trustregion_newdzw.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/13_trustregion_newdzw.pdf) · [牛顿法+信赖域合并版](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/lect-newton-TR.pdf) |
+| 13 | 信赖域算法 | 邓展望（独立版）；陈乐恒、丁思哲、邓展望（合并版） | [13_trustregion_newdzw.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/13_trustregion_newdzw.pdf) · [牛顿法+信赖域合并版](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/lect-newton-TR.pdf) |
 | 14 | 拟牛顿算法 | 丁思哲 | [12-lect-QN.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/12-lect-QN.pdf) |
 | 15 | 非线性最小二乘问题 | 张轩熙 | [14-lsp-new-zxx.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/14-lsp-new-zxx.pdf) |
 | 16 | 罚函数法 | 陈乐恒、邓展望 | [15-lect-penalty.pdf](http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/lect/15-lect-penalty.pdf) |
