@@ -558,7 +558,7 @@ Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归
 新增 `labs/17_optimization_constrained.py`：第一部分在等式约束二次问题上比较 quadratic penalty 与 fixed-penalty ALM，显式展示罚函数约束违反下降伴随 Hessian 条件数增长，而 ALM 通过乘子反馈在固定有限罚因子下逼近 KKT 乘子；第二部分求解二维 LP 的扰动原始–对偶 KKT 方程，沿中心路径逐步减小 `tau`，验证 `x^T s = 2 tau`、原始/对偶目标靠拢以及边界最优解的逼近。
 
 
-### 2026-09-27｜完成 Unit 06：复合优化
+### 2026-09-27｜交付 Unit 06 草稿：复合优化
 
 新增 `docs/courses/optimization-pku-wenzw-study-units/06-composite.md`，以凸复合问题为主线说明 proximal operator、ISTA、FISTA、PPA、BCD、对偶分解与 ADMM；显式列出闭凸性、Lipschitz 梯度、最优解及分裂鞍点等条件，不把凸速度结论套用于非凸情形。PPA 与对偶 ALM 的关系沿用 Unit 05 的乘子符号，并指向既有等式约束实验。
 
