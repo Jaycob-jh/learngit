@@ -94,7 +94,7 @@ number theory → algebra → probability → complexity/computability。
 
 ## 实验室
 
-见 [数学实验室](../labs/README.md)。
+见 [数学实验室](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/README.md)。
 
 从动画和数值实验开始，建议重点观察“什么时候理论开始失效”：
 

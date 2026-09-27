@@ -797,4 +797,4 @@ $$
 - 原始–对偶 gap 为什么等于 $x^Ts$？
 - 为什么 ALM 与内点法都可以看成“直接逼近 KKT”，但采用了完全不同的路径？
 
-下一单元：[Unit 06｜复合优化：proximal、加速与分裂](../optimization-pku-wenzw-study-roadmap.md#unit-06复合优化proximal加速分裂)
+下一单元：[Unit 06｜复合优化：proximal、加速与分裂](06-composite.md)

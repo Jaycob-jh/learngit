@@ -468,4 +468,4 @@ $$
 - 为什么“问题分类”会决定算法路线？
 - 一个应用问题为什么可能对应多个不同的优化模型？
 
-下一单元：[Unit 03｜最优性理论](../optimization-pku-wenzw-study-roadmap.md#unit-03最优性什么叫解对了)
+下一单元：[Unit 03｜最优性理论](03-optimality.md)

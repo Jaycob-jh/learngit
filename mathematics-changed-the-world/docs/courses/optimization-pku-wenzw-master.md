@@ -482,7 +482,7 @@ Hessian 描述局部曲率。它同时进入：
 - conditioning；
 - 二阶 Taylor 模型。
 
-这也是本知识库 [Taylor 展开](../../core/02-taylor.md) 与 [凸优化](../../branches/19-convex-optimization.md) 的直接连接点。
+这也是本知识库 [Taylor 展开](../core/02-taylor.md) 与 [凸优化](../branches/19-convex-optimization.md) 的直接连接点。
 
 ### 6. 第五层：为什么要学数值代数？
 
@@ -612,7 +612,7 @@ $$
 - 为什么 Newton 法离不开数值线性代数？
 - condition number 对优化计算意味着什么？
 
-下一单元：[Unit 02｜优化建模与典型问题](../optimization-pku-wenzw-study-roadmap.md#unit-02建模把现实问题写成优化问题)
+下一单元：[Unit 02｜优化建模与典型问题](optimization-pku-wenzw-study-units/02-modeling.md)
 
 ---
 
@@ -1086,7 +1086,7 @@ $$
 - 为什么“问题分类”会决定算法路线？
 - 一个应用问题为什么可能对应多个不同的优化模型？
 
-下一单元：[Unit 03｜最优性理论](../optimization-pku-wenzw-study-roadmap.md#unit-03最优性什么叫解对了)
+下一单元：[Unit 03｜最优性理论](optimization-pku-wenzw-study-units/03-optimality.md)
 
 ---
 
@@ -1539,7 +1539,7 @@ $$
 - Slater 如何连接强对偶与凸问题 KKT 的充要性？
 - 为什么相同可行域的不同表达可能导致不同 KKT 行为？
 
-下一单元：[Unit 04｜无约束优化算法](../optimization-pku-wenzw-study-roadmap.md#unit-04无约束算法从梯度到信赖域)
+下一单元：[Unit 04｜无约束优化算法](optimization-pku-wenzw-study-units/04-unconstrained.md)
 
 ---
 
@@ -2263,7 +2263,7 @@ $$
 - LM 和 trust region 的关系是什么？
 - 为什么不能仅按“Q-二次 > Q-超线性 > Q-线性”给算法排优劣？
 
-下一单元：[Unit 05｜约束优化算法](../optimization-pku-wenzw-study-roadmap.md#unit-05约束优化罚函数alm-与内点法)
+下一单元：[Unit 05｜约束优化算法](optimization-pku-wenzw-study-units/05-constrained.md)
 
 ---
 
@@ -3066,7 +3066,7 @@ $$
 - 原始–对偶 gap 为什么等于 $x^Ts$？
 - 为什么 ALM 与内点法都可以看成“直接逼近 KKT”，但采用了完全不同的路径？
 
-下一单元：[Unit 06｜复合优化：proximal、加速与分裂](../optimization-pku-wenzw-study-roadmap.md#unit-06复合优化proximal加速分裂)
+下一单元：[Unit 06｜复合优化：proximal、加速与分裂](optimization-pku-wenzw-study-units/06-composite.md)
 
 
 ## 6. Unit 06 草稿待审；Unit 07–10 施工计划

@@ -275,4 +275,4 @@ $$
 - 为什么 Newton 法离不开数值线性代数？
 - condition number 对优化计算意味着什么？
 
-下一单元：[Unit 02｜优化建模与典型问题](../optimization-pku-wenzw-study-roadmap.md#unit-02建模把现实问题写成优化问题)
+下一单元：[Unit 02｜优化建模与典型问题](02-modeling.md)
