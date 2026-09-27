@@ -718,4 +718,4 @@ $$
 - LM 和 trust region 的关系是什么？
 - 为什么不能仅按“Q-二次 > Q-超线性 > Q-线性”给算法排优劣？
 
-下一单元：[Unit 05｜约束优化算法](../optimization-pku-wenzw-study-roadmap.md#unit-05约束优化罚函数alm-与内点法)
+下一单元：[Unit 05｜约束优化算法](05-constrained.md)

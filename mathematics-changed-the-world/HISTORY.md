@@ -563,3 +563,8 @@ Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归
 新增 `docs/courses/optimization-pku-wenzw-study-units/06-composite.md`，以凸复合问题为主线说明 proximal operator、ISTA、FISTA、PPA、BCD、对偶分解与 ADMM；显式列出闭凸性、Lipschitz 梯度、最优解及分裂鞍点等条件，不把凸速度结论套用于非凸情形。PPA 与对偶 ALM 的关系沿用 Unit 05 的乘子符号，并指向既有等式约束实验。
 
 新增 `labs/18_optimization_composite.py`，在同一固定种子的 LASSO 上比较 ISTA、FISTA、循环坐标下降与两块 ADMM，记录原目标、proximal gradient mapping 与 ADMM 分裂残差；另用标量二次问题展示越过稳定步长上界的发散。实验只观察机制，不据迭代次数对方法作通用速度排名。
+
+
+### 2026-09-27｜仓库入口与资料覆盖基线
+
+仓库更名为 `math-atlas` 后，新增根目录 `README.md` 作为数学知识与应用实验入口；默认分支改为 `math-changed-world`，旧 `main` 仍保留。新增 `docs/coverage-matrix.md` 与逐项 TSV，按 9 个核心页面、20 条数学主干、18 个 Python 实验、27 个讲义主题和 42 个官方程序说明页记录实际核查级别，明确 HTTP 可读、全文审读和运行验证的区别。修正原有页面中错误的本地链接及 Unit 01–05 的无效下一单元锚点；不改这些单元的正文论证。

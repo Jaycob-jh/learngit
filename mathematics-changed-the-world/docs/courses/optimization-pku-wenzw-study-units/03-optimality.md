@@ -447,4 +447,4 @@ $$
 - Slater 如何连接强对偶与凸问题 KKT 的充要性？
 - 为什么相同可行域的不同表达可能导致不同 KKT 行为？
 
-下一单元：[Unit 04｜无约束优化算法](../optimization-pku-wenzw-study-roadmap.md#unit-04无约束算法从梯度到信赖域)
+下一单元：[Unit 04｜无约束优化算法](04-unconstrained.md)
