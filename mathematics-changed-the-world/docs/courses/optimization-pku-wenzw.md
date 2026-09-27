@@ -198,6 +198,11 @@ Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳�
 - M2F：https://github.com/optsuite/M2F
 - SITA：https://github.com/chenyili0818/SITA
 - lean-tools-mcp：https://github.com/optsuite/lean-tools-mcp
+- Quokka：https://quokka.reaslab.io/ —— M2F / ReasBook 当前 README 将其登记为 M2F 的工程实现与公开在线服务，并明确保留“源码后续开放”的限制。
+
+当前已确认的公开 benchmark：
+
+- CAM-Bench：https://github.com/optpku/CAM-Bench —— 面向计算与应用数学的 Lean4 形式化定理证明基准，覆盖最优化、数值线性代数等主题。
 
 这些资源适合放在“已经会推导和实现算法”之后，用来训练机器可检查的定义、定理和收敛证明；它们不替代常规分析与数值训练。
 
@@ -300,7 +305,7 @@ Optlib 当前公开说明把凸分析、最优性条件和算法收敛统一纳�
 | C8 | 27 个讲义主题 / 33 个 PDF URL | 来源记录 | 高（用户提供并确认可访问） | 保留原 URL 与协助准备者；自动抓取 502 不等同失效 |
 | C9 | 第二版新增流形约束优化、半光滑 Newton 并完善教学资源 | 描述性 | 高 | 用户提供的第二版 PDF，2025-02 前言 |
 | C10 | 《最优化方法与理论》ISBN `978-7-04-062561-5`、版次 1、出版时间 `2025-01-16` | 描述性 | 高 | 高等教育出版社产品页；北大“101 计划”页交叉核对作者与 ISBN |
-| C11 | Optlib / ReasLab / ReasBook 及 M2F、SITA、lean-tools-mcp 构成当前公开形式化资源链 | 来源记录 | 高 | Optlib 当前 README 逐项链接 |
+| C11 | 当前已确认的形式化资源链包含 Optlib / ReasLab / ReasBook、M2F、SITA、lean-tools-mcp、Quokka 与 CAM-Bench | 来源记录 | 高 | Optlib、M2F、ReasBook 当前 README 与 CAM-Bench 公开仓库；Quokka 仅记为公开在线服务并保留“源码后续开放”边界 |
 | C12 | ARNT / OptM 是 optsuite 下的流形优化与正交约束公开代码资源 | 来源记录 | 高 | optsuite GitHub 公开仓库；不据此推断流形讲义 PDF 已发布 |
 
 ### Protected elements
