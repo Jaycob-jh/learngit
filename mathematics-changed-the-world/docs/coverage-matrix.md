@@ -29,6 +29,6 @@
 
 ## 与课程建设的关系
 
-- [最优化学习路线](courses/optimization-pku-wenzw-study-roadmap.md)将讲义映射到 Unit 01–10；Unit 06 目前是待审草稿，Unit 07–10 仍在规划。
+- [最优化学习路线](courses/optimization-pku-wenzw-study-roadmap.md)将讲义映射到 Unit 01–10。Unit 07–10 已有待审页面；Unit 07–09 的新脚本未运行，Unit 10 尚无已编译证明。[本批资料到页面映射](courses/optimization-pku-wenzw-unit07-10-source-map.md)另记新增内容，不回写本页 2026-09-27 的 120 行基线快照。
 - [实验清单](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/labs/README.md)列出当前脚本；每个实验是否真正运行，以独立运行记录为准。
 - 流形约束优化电子讲义在当前官方讲义索引中仍未单列；教材章节或 ARNT/OptM 代码不能替代该 PDF 的直接证据。

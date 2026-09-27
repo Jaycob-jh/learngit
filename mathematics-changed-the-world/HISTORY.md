@@ -1,11 +1,17 @@
 # 项目历史记录 / HISTORY
 
 > 项目：`mathematics-changed-the-world`  
-> 仓库：`Jaycob-jh/learngit`  
+> 仓库：`Jaycob-jh/math-atlas`（原 `learngit`）  
 > 分支：`math-changed-world`  
 > 时间统一按 UTC+8 描述；GitHub Commit API 原始时间使用 UTC。
 
 ---
+
+## 2026-09-27：Unit 07–10 待审实施稿
+
+- 已建立 Unit 07–10 独立页面、Unit 07–09 的五个脚本、Unit 09 空白运行记录模板及资料映射表。
+- 本批按 Hai 要求不运行脚本、不复核 PDF/代码/Lean；预设失败条件仅为实验设计，未产生运行结果。
+- 课程总览、路线与导航同步链接到待审页面；本批提交与 PR 状态见工作区项目 `MANIFEST.md`。
 
 ## 2026-09-19：项目起点
 
