@@ -36,6 +36,12 @@ nav:
           - 04 无约束优化算法: courses/optimization-pku-wenzw-study-units/04-unconstrained.md
           - 05 约束优化算法: courses/optimization-pku-wenzw-study-units/05-constrained.md
           - 06 复合优化算法: courses/optimization-pku-wenzw-study-units/06-composite.md
+          - 07 随机与非光滑优化: courses/optimization-pku-wenzw-study-units/07-stochastic-nonsmooth.md
+          - 08 流形约束优化: courses/optimization-pku-wenzw-study-units/08-manifold.md
+          - 09 端到端应用: courses/optimization-pku-wenzw-study-units/09-applications.md
+          - 10 Lean4 形式化入口: courses/optimization-pku-wenzw-study-units/10-formalization.md
+          - Unit 09 运行记录模板: courses/optimization-pku-wenzw-unit09-run-log.md
+          - Unit 07–10 资料映射: courses/optimization-pku-wenzw-unit07-10-source-map.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md

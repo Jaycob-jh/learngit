@@ -99,11 +99,15 @@ $$
 
 **资源**：随机优化、半光滑 Newton、第二版相关章节。
 
+进入：[Unit 07 待审学习页](optimization-pku-wenzw-study-units/07-stochastic-nonsmooth.md)；教学脚本 `labs/19_optimization_stochastic_nonsmooth.py` 尚未运行。
+
 目标：SGD 与有限和/期望目标；方差减小；广义导数与半光滑 Newton；比较一阶大规模方法和高精度局部方法。
 
 ## Unit 08｜流形约束优化
 
 教材第二版已经包含流形约束优化；当前电子讲义清单暂未单列对应 PDF。
+
+进入：[Unit 08 待审学习页](optimization-pku-wenzw-study-units/08-manifold.md)；教学脚本 `labs/20_optimization_manifold.py` 尚未运行。
 
 现有代码入口：
 
@@ -116,11 +120,15 @@ $$
 
 从压缩感知、低秩恢复、相位恢复、图像 TV/小波、logistic regression/SVM、随机优化/深度学习、强化学习、最优传输中至少完成三个端到端项目。
 
+进入：[Unit 09 三项目实施稿](optimization-pku-wenzw-study-units/09-applications.md)与[空白运行记录模板](optimization-pku-wenzw-unit09-run-log.md)。三个脚本已写入但未运行，不能将项目标为“已完成”。
+
 每个项目必须回答：为什么选这个模型？为什么选这个算法？如果关键假设不满足，会怎样？
 
 ## Unit 10｜形式化验证（可选）
 
 进入 Optlib / ReasLab / Lean4 路线，把已经掌握的优化理论转化成机器可检查对象。优先顺序：凸集/凸函数 → 一阶最优性 → 梯度下降 → proximal/Nesterov → BCD/ADMM → 更复杂的收敛证明。
+
+[Unit 10 待审学习页](optimization-pku-wenzw-study-units/10-formalization.md)列出证明义务；当前没有已编译 Lean 证明。
 
 ## 完成标准
 

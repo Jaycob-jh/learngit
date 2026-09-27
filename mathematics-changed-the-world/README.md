@@ -61,11 +61,11 @@
 - [可计算性](docs/branches/17-computability.md)
 - [概率论](docs/branches/20-probability.md)
 
-### 18 个 Python 实验
+### 18 个既有实验与 5 个待审脚本
 
 见 [labs/README.md](labs/README.md)。
 
-包括九个核心专题实验，以及 Kalman、小波、attention 和 Unit 01–06 最优化实验。例如：
+既有内容包括九个核心专题实验，以及 Kalman、小波、attention 和 Unit 01–06 最优化实验。Unit 07–09 新增的五个脚本尚未运行。例如：
 
 - 微积分累积函数；
 - Taylor 动画；
