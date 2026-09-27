@@ -34,6 +34,7 @@ nav:
           - 03 最优性理论: courses/optimization-pku-wenzw-study-units/03-optimality.md
           - 04 无约束优化算法: courses/optimization-pku-wenzw-study-units/04-unconstrained.md
           - 05 约束优化算法: courses/optimization-pku-wenzw-study-units/05-constrained.md
+          - 06 复合优化算法: courses/optimization-pku-wenzw-study-units/06-composite.md
   - 九个核心:
       - 01 微积分: core/01-calculus.md
       - 02 Taylor: core/02-taylor.md

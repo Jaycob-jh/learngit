@@ -32,6 +32,7 @@ pip install -r requirements-labs.txt
 15. \`15_optimization_optimality.py\`：驻点/二阶条件、约束品性与 KKT、Slater 与强对偶。
 16. \`16_optimization_unconstrained.py\`：统一比较 Gradient/BB/Newton/BFGS/Trust Region，并演示 Gauss-Newton/LM 非线性最小二乘。
 17. \`17_optimization_constrained.py\`：比较二次罚函数与 ALM，并沿 LP 原始–对偶中心路径观察可行性、互补性与 duality gap。
+18. \`18_optimization_composite.py\`：同一 LASSO 比较 ISTA、FISTA、循环坐标下降与 ADMM，记录目标值、proximal gradient mapping 及 ADMM 分裂残差。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
 

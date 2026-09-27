@@ -556,3 +556,10 @@ Unit 02 保留教材的重要条件边界：高斯白噪声假设下线性回归
 该单元保留教材的重要条件边界：二次罚函数的全局收敛结论要求每个子问题取得全局极小解且罚因子趋于无穷；近似子问题版本还要求一阶残差趋零并在极限点有相应线性无关条件。精确 ℓ1 罚函数的有限罚因子结论以严格局部极小、KKT 和乘子阈值为前提。ALM 的局部精确性依赖 LICQ 与二阶充分条件；凸问题 ALM 的乘子收敛结论以 Slater 和不精确子问题条件为前提。
 
 新增 `labs/17_optimization_constrained.py`：第一部分在等式约束二次问题上比较 quadratic penalty 与 fixed-penalty ALM，显式展示罚函数约束违反下降伴随 Hessian 条件数增长，而 ALM 通过乘子反馈在固定有限罚因子下逼近 KKT 乘子；第二部分求解二维 LP 的扰动原始–对偶 KKT 方程，沿中心路径逐步减小 `tau`，验证 `x^T s = 2 tau`、原始/对偶目标靠拢以及边界最优解的逼近。
+
+
+### 2026-09-27｜交付 Unit 06 草稿：复合优化
+
+新增 `docs/courses/optimization-pku-wenzw-study-units/06-composite.md`，以凸复合问题为主线说明 proximal operator、ISTA、FISTA、PPA、BCD、对偶分解与 ADMM；显式列出闭凸性、Lipschitz 梯度、最优解及分裂鞍点等条件，不把凸速度结论套用于非凸情形。PPA 与对偶 ALM 的关系沿用 Unit 05 的乘子符号，并指向既有等式约束实验。
+
+新增 `labs/18_optimization_composite.py`，在同一固定种子的 LASSO 上比较 ISTA、FISTA、循环坐标下降与两块 ADMM，记录原目标、proximal gradient mapping 与 ADMM 分裂残差；另用标量二次问题展示越过稳定步长上界的发散。实验只观察机制，不据迭代次数对方法作通用速度排名。
