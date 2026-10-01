@@ -66,12 +66,12 @@ $$
 
 ### Fourier：沿实频率轴观察连续时间信号
 
-$
+$$
 X_F(\omega)
 \mathrel{=}
 \int_{-\infty}^{\infty}
 x(t)e^{-i\omega t}\,dt.
-$
+$$
 
 这里 $\omega\in\mathbb R$。Fourier 变换直接描述频率组成，但普通积分形式要求相应的收敛条件；更一般的信号还可以在 $L^2$ 或分布意义下讨论。
 
@@ -79,30 +79,30 @@ $
 
 双边 Laplace 变换写作
 
-$
+$$
 X_L(s)
 \mathrel{=}
 \int_{-\infty}^{\infty}
 x(t)e^{-st}\,dt,
 \qquad
 s=\sigma+i\omega.
-$
+$$
 
 因为
 
-$
+$$
 e^{-st}
 =
 e^{-\sigma t}e^{-i\omega t},
-$
+$$
 
 所以对固定的 $\sigma$，Laplace 变换可以看成对指数加权信号 $x(t)e^{-\sigma t}$ 做 Fourier 变换。只有当 Laplace 的收敛域包含虚轴 $\sigma=0$ 时，才可以写
 
-$
+$$
 X_F(\omega)
 =
 X_L(i\omega).
-$
+$$
 
 因此“Fourier 是 Laplace 在虚轴上的切片”是一个**带 ROC 条件的关系**，不是无条件恒等式。
 
@@ -110,30 +110,30 @@ $
 
 双边 Z 变换为
 
-$
+$$
 X_Z(z)
 \mathrel{=}
 \sum_{n=-\infty}^{\infty}
 x[n]z^{-n},
 \qquad
 z=re^{i\Omega}.
-$
+$$
 
 由于
 
-$
+$$
 z^{-n}
 =
 r^{-n}e^{-i\Omega n},
-$
+$$
 
 Z 变换可以看成对指数加权序列 $x[n]r^{-n}$ 做离散时间 Fourier 分析。当 Z 变换的 ROC 包含单位圆 $|z|=1$ 时，
 
-$
+$$
 X_{\mathrm{DTFT}}(\Omega)
 =
 X_Z(e^{i\Omega}).
-$
+$$
 
 这也是为什么单位圆在数字信号处理中如此重要。注意 **Z 变换不是 DFT**：DFT 处理有限长度数据并只取有限个离散频率点，而 Z 变换的自变量 $z$ 是复数，通常还必须连同 ROC 一起指定。
 
@@ -141,19 +141,19 @@ $
 
 若以采样周期 $T$ 观察连续时间模态 $e^{st}$，采样后得到
 
-$
+$$
 e^{snT}
 =
 \left(e^{sT}\right)^n.
-$
+$$
 
 因此连续时间极点/指数模态与离散时间极点之间自然出现映射
 
-$
+$$
 z=e^{sT}
 =
 e^{\sigma T}e^{i\omega T}.
-$
+$$
 
 它把：
 
