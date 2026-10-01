@@ -52,6 +52,17 @@
 16. NIST — Introduction to Fourier Transform Spectroscopy
     https://www.nist.gov/publications/introduction-fourier-transform-spectroscopy
 
+## Laplace / Z / 连续—离散系统
+
+- MIT OpenCourseWare RES.6-007 — Lecture 20: The Laplace Transform  
+  https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-20-the-laplace-transform/
+
+- MIT OpenCourseWare RES.6-007 — Lecture 22: The z-Transform  
+  https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-22-the-z-transform/
+
+- MIT OpenCourseWare RES.6-007 — Lecture 23: Mapping Continuous-Time Filters to Discrete-Time Filters  
+  https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-23-mapping-continuous-time-filters-to-discrete-time-filters/
+
 ## 矩阵、几何、群
 
 17. MacTutor — Matrices and determinants
