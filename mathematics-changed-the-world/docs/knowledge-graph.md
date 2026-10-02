@@ -13,6 +13,13 @@ flowchart LR
 
     Complex[复数] --> Euler[Euler 公式]
     Euler --> Fourier[Fourier]
+    ODE --> Laplace[Laplace]
+    Fourier --> Laplace
+    Fourier --> Sampling[采样 / DTFT]
+    Sampling --> ZT[Z 变换]
+    Laplace --> Control
+    ZT --> Control
+    ZT --> DSP[数字信号处理]
     Fourier --> Residue[复分析 / 留数]
     Fourier --> Wavelet[小波]
     Fourier --> Func[泛函分析]
@@ -51,7 +58,7 @@ flowchart LR
     Fourier --> MRI[MRI / 成像]
 \`\`\`
 
-## 五条最值得记住的“纵向主链”
+## 六条最值得记住的“纵向主链”
 
 ### 1. 连续变化链
 
@@ -127,10 +134,26 @@ $$
 \text{现代机器学习}.
 $$
 
+### 6. 变换与系统链
+
+$$
+\text{ODE}
++
+\text{Euler/Fourier}
+\to
+\text{Laplace}
+\to
+\text{采样}
+\to
+\text{Z}
+\to
+\text{数字信号/控制}.
+$$
+
 ## 横向观察：数学不断重复四种策略
 
 ### 换表示
-Fourier、Laplace、SVD、eigenbasis、wavelet。
+Fourier、Laplace、Z、SVD、eigenbasis、wavelet。
 
 ### 局部化
 derivative、Taylor、local coordinate、wavelet。

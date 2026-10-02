@@ -178,6 +178,8 @@ $$
 | Laplace | 连续 $t$ | $s=\sigma+i\omega$ | ROC 含虚轴时取 $s=i\omega$ | 微分方程、连续控制、极点稳定性 |
 | Z | 离散 $n$ | $z=re^{i\Omega}$ | ROC 含单位圆时取 $z=e^{i\Omega}$ 得 DTFT | 数字滤波、差分方程、离散控制 |
 
+更系统的双边/单边变换、同一代数式的不同 ROC、采样脉冲列、ZOH、impulse invariance、bilinear/Tustin、生成函数和概率论连接，见 [Fourier–Laplace–Z 专题桥梁](../bridges/01-transform-family.md)。
+
 ## 5. 为什么变换之后更好算？
 
 ### 微分变乘法
