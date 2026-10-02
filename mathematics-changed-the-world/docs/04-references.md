@@ -54,6 +54,9 @@
 
 ## Laplace / Z / 连续—离散系统
 
+- MIT OpenCourseWare RES.6-007 — Lecture 16: Sampling  
+  https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-16-sampling/
+
 - MIT OpenCourseWare RES.6-007 — Lecture 20: The Laplace Transform  
   https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-20-the-laplace-transform/
 
@@ -62,6 +65,12 @@
 
 - MIT OpenCourseWare RES.6-007 — Lecture 23: Mapping Continuous-Time Filters to Discrete-Time Filters  
   https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-23-mapping-continuous-time-filters-to-discrete-time-filters/
+
+- MIT OpenCourseWare RES.6-007 — readings for ROC, inverse transforms, LTI analysis and bilinear transformation  
+  https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/pages/readings/
+
+- SciPy — signal.bilinear_zpk documentation (Tustin/bilinear transform)  
+  https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bilinear_zpk.html
 
 ## 矩阵、几何、群
 

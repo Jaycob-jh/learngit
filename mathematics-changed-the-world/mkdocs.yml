@@ -54,6 +54,8 @@ nav:
       - 07 Bayes: core/07-bayes.md
       - 08 素数与 Riemann: core/08-prime-number-theorem.md
       - 09 Lebesgue: core/09-lebesgue.md
+  - 专题桥梁:
+      - Fourier–Laplace–Z: bridges/01-transform-family.md
   - 数学主干:
       - 拓扑: branches/01-topology.md
       - 微分几何: branches/02-differential-geometry.md
