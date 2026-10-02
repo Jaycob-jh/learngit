@@ -909,9 +909,9 @@ $$
 
 运行：
 
-\`\`\`bash
+```bash
 python labs/24_transform_family.py
-\`\`\`
+```
 
 实验观察四件事：
 
