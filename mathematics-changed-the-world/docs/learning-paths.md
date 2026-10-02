@@ -42,18 +42,20 @@
 4. 线性代数
 5. 微分方程
 6. Fourier
-7. 散度定理
-8. 概率
-9. Bayes
-10. 随机过程
-11. 控制论
-12. 小波
-13. 数值分析
-14. 凸优化
+7. [Fourier–Laplace–Z：极点、采样与数字系统](bridges/01-transform-family.md)
+8. 散度定理
+9. 概率
+10. Bayes
+11. 随机过程
+12. 控制论
+13. 小波
+14. 数值分析
+15. 凸优化
 
 建议同步运行：
 
 - Fourier decomposition；
+- transform family（$s$ 平面、$z$ 平面、ZOH、Tustin）；
 - wavelet demo；
 - Kalman filter；
 - Taylor approximation。
