@@ -21,6 +21,7 @@ extra_javascript:
 
 nav:
   - 首页: index.md
+  - 关键词资料检索: keyword-search.md
   - 学习路线: learning-paths.md
   - 知识图谱: knowledge-graph.md
   - 课程体系:

@@ -6,6 +6,7 @@
 
 | 目标 | 入口 |
 |---|---|
+| 按关键词找资料、教材与章节 | [关键词资料检索](mathematics-changed-the-world/docs/keyword-search.md) · [下载离线检索HTML](https://github.com/Jaycob-jh/math-atlas/blob/math-changed-world/mathematics-changed-the-world/docs/knowledge-search/index.html) |
 | 按数学主题学习 | [知识库首页](mathematics-changed-the-world/docs/index.md) · [九个核心专题与数学主干](mathematics-changed-the-world/README.md) · [Fourier–Laplace–Z 专题桥梁](mathematics-changed-the-world/docs/bridges/01-transform-family.md) |
 | 从最优化教材与课程进入 | [文再文最优化课程资源](mathematics-changed-the-world/docs/courses/optimization-pku-wenzw.md) · [学习路线](mathematics-changed-the-world/docs/courses/optimization-pku-wenzw-study-roadmap.md) |
 | 运行应用实验 | [Python 实验目录](mathematics-changed-the-world/labs/README.md) |
