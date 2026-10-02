@@ -15,7 +15,7 @@
 
 ## 变换域：Laplace、Z 与极点
 
-连续时间 LTI 系统常在 Laplace 域分析，离散时间 LTI 系统常在 Z 域分析。它们与 Fourier 的统一关系、收敛域和 $z=e^{sT}$ 映射见 [Fourier 变换：把“看起来复杂”改写成“由哪些频率组成”](../core/04-fourier.md)。
+连续时间 LTI 系统常在 Laplace 域分析，离散时间 LTI 系统常在 Z 域分析。它们与 Fourier 的统一关系、双边/单边变换、收敛域、采样和 $z=e^{sT}$ 映射见 [Fourier–Laplace–Z 专题桥梁](../bridges/01-transform-family.md)。
 
 在零初始条件下，连续系统的 transfer function 常写为
 
