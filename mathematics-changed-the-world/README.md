@@ -61,11 +61,11 @@
 - [可计算性](docs/branches/17-computability.md)
 - [概率论](docs/branches/20-probability.md)
 
-### 18 个既有实验与 5 个待审脚本
+### 24 个实验与教学脚本
 
 见 [labs/README.md](labs/README.md)。
 
-既有内容包括九个核心专题实验，以及 Kalman、小波、attention 和 Unit 01–06 最优化实验。Unit 07–08 的两个新脚本尚未运行；Unit 09 的三个脚本已完成单一种子的基线和压力运行，详见[原始记录](labs/records/unit09/README.md)。例如：
+内容包括九个核心专题实验、Kalman、小波、attention、Unit 01–09 最优化实验，以及 [Fourier–Laplace–Z 变换族实验](labs/24_transform_family.py)。Unit 07–08 的两个新脚本尚未运行；Unit 09 的三个脚本已完成单一种子的基线和压力运行，详见[原始记录](labs/records/unit09/README.md)。变换族实验已用默认参数做本地无界面运行检查。例如：
 
 - 微积分累积函数；
 - Taylor 动画；
@@ -90,7 +90,7 @@
 ### 我做信号 / MRI / BCI / 工程
 走：
 
-复数 → Euler → 线性代数 → Fourier → 概率 → 随机过程 → 控制 → 小波 → 数值分析。
+复数 → Euler → 线性代数 → 微分方程 → Fourier → [Laplace / Z / 采样](docs/bridges/01-transform-family.md) → 概率 → 随机过程 → 控制 → 小波 → 数值分析。
 
 ### 我做 AI / ML
 走：

@@ -6,7 +6,7 @@
 
 | 目标 | 入口 |
 |---|---|
-| 按数学主题学习 | [知识库首页](mathematics-changed-the-world/docs/index.md) · [九个核心专题与数学主干](mathematics-changed-the-world/README.md) |
+| 按数学主题学习 | [知识库首页](mathematics-changed-the-world/docs/index.md) · [九个核心专题与数学主干](mathematics-changed-the-world/README.md) · [Fourier–Laplace–Z 专题桥梁](mathematics-changed-the-world/docs/bridges/01-transform-family.md) |
 | 从最优化教材与课程进入 | [文再文最优化课程资源](mathematics-changed-the-world/docs/courses/optimization-pku-wenzw.md) · [学习路线](mathematics-changed-the-world/docs/courses/optimization-pku-wenzw-study-roadmap.md) |
 | 运行应用实验 | [Python 实验目录](mathematics-changed-the-world/labs/README.md) |
 | 核对资料使用程度 | [覆盖情况与证据边界](mathematics-changed-the-world/docs/coverage-matrix.md) · [逐项清单 TSV](mathematics-changed-the-world/docs/coverage-matrix.tsv) |
@@ -23,4 +23,4 @@ python -m mkdocs serve
 
 ## 当前状态
 
-知识库包含九个核心专题、二十条数学主干、十八个既有 Python 实验，以及 Unit 07–09 的五个新脚本。最优化 Unit 07–10 已建立独立学习页；Unit 09 的三个合成数据项目已完成单一种子的基线和压力运行，并保留[来源页码与原始记录](mathematics-changed-the-world/labs/records/unit09/README.md)。Unit 07–08 新脚本仍未运行，Unit 10 没有已编译证明。资料索引中的“链接可读”“内容已审读”“代码已运行”分别记录，不互相替代。仓库历史上的 `readme.txt` 保留为早期 Git 练习记录。
+知识库包含九个核心专题、二十条数学主干、一个 Fourier–Laplace–Z 专题桥梁，以及 24 个 Python 实验/教学脚本。最优化 Unit 07–10 已建立独立学习页；Unit 09 的三个合成数据项目已完成单一种子的基线和压力运行，并保留[来源页码与原始记录](mathematics-changed-the-world/labs/records/unit09/README.md)。Unit 07–08 新脚本仍未运行，Unit 10 没有已编译证明。资料索引中的“链接可读”“内容已审读”“代码已运行”分别记录，不互相替代。仓库历史上的 `readme.txt` 保留为早期 Git 练习记录。
