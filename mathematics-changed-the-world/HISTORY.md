@@ -7,6 +7,14 @@
 
 ---
 
+## 2026-10-02：Fourier–Laplace–Z 专题桥梁
+
+- 新增 docs/bridges/01-transform-family.md，把 Fourier、双边/单边 Laplace、Z、ROC、卷积、transfer function、极点/零点、$z=e^{sT}$、采样混叠、ZOH、impulse invariance、bilinear/Tustin 放在同一框架中。
+- 内容继续向外连接生成函数、Fibonacci 型递推、概率 characteristic/moment/probability-generating functions，以及 STFT/wavelet 的局部时频观点；明确这些是结构连接，不把它们写成同一个数学对象。
+- 新增 labs/24_transform_family.py。默认参数在本地使用无界面 Matplotlib 后端运行，进程退出码为 0；观察到连续极点 $s=-2$ 映为 $z=e^{-0.1}\approx0.904837$，且相差 $2\pi/T$ 的两频率在指数映射下数值上重合到浮点误差量级。
+- 同步更新首页、学习路线、知识图谱、Fourier、控制论、微分方程、MkDocs 导航和参考资料。资料入口以 MIT OpenCourseWare RES.6-007 与 SciPy bilinear/Tustin 文档为主。
+- 本批仍区分“公式/链接静态核对”“本地脚本运行”和“完整文档站/跨平台验收”；没有把一次成功运行写成一般正确性证明。
+
 ## 2026-09-27：Unit 09 来源页码与实测记录
 
 - 从教材第二版官方草稿逐页定位项目 A 的 LASSO（书页 90–92）、近端梯度（384）和 FISTA（394），项目 B 的 logistic（93–94）、SGD（498）与应用（505），项目 C 的相位恢复（100–102）；各页的 PDF 页码见[原始记录](labs/records/unit09/README.md)。

@@ -42,6 +42,10 @@ pip install -r requirements-labs.txt
 22. \`22_optimization_logistic.py\`：Unit 09 项目 B，logistic 分类的全梯度/SGD。
 23. \`23_optimization_phase_retrieval.py\`：Unit 09 项目 C，谱初始化/随机初始化的非凸相位恢复。
 
+## 变换专题实验
+
+24. 24_transform_family.py：把一阶连续系统的 $s$ 平面极点映到 $z=e^{sT}$，比较模拟/采样频率响应，并可视化 bilinear/Tustin 的 frequency warping。默认参数已做本地无界面运行检查，退出码为 0；这不等价于跨平台或交互式绘图验收。
+
 Unit 07–08 的脚本 19–20 尚未运行。Unit 09 的脚本 21–23 已在固定种子下完成基线和压力运行；[实际运行记录](../docs/courses/optimization-pku-wenzw-unit09-run-log.md)与[原始 CSV](records/unit09/README.md)包含来源页码、命令和失败案例。单次合成数据观察不代表跨种子或真实数据验收。
 
 多数脚本只依赖 NumPy / Matplotlib / SciPy；wavelet 示例额外依赖 PyWavelets。
